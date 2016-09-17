@@ -22,6 +22,16 @@ Copy `readme.txt` to the `documents` folder
 cp readme.txt documents
 ```
 
+## duplicate a file
+
+**STOP RIGHT CLICK AND DUPLICATE FILE**
+
+If `readme.bak.txt` file doesn't exist
+
+```
+cp readme.txt readme.bak.txt
+```
+
 ## copy a folder
 
 **STOP DRAG AND DROP A FOLDER, OR CMD/CTRL + C, CMD/CTRL + V A FOLDER**
