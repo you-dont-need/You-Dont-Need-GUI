@@ -32,6 +32,16 @@ Copy `myMusic` folder under `myMedia` folder
 cp -R myMusic myMedia
 ```
 
+## duplicate a folder
+
+**STOP RIGHT CLICK AND DUPLICATE FOLDER**
+
+If `myMedia` folder doesn't exist
+
+```
+cp -R myMusic myMedia
+```
+
 ## move a file
 
 **STOP DRAG AND DROP A FILE, OR CTRL + X, CTRL + V A FILE**
