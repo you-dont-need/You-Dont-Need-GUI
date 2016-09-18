@@ -8,7 +8,7 @@ Graphical user interfaces are super friendly to computer users. They were introd
 
 ![Xerox Star 8010 workstations](./Xerox_Star_8010_workstations.jpg)
 
-However, They often require more resources, are less powerful and hard to automate via scripting.
+However, they often require more resources, are less powerful and hard to automate via scripting.
 
 As a computer expert, we want to be more efficient and do our jobs better. We know that command words may not be easily discoverable or mnemonic, so we try to list some common tasks that you might tempt to do in GUI.
 
@@ -17,16 +17,16 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [copy a file](#copyfile)
 1. [duplicate a file](#duplicatefile)
 1. [copy a folder](#copyfolder)
-1. [copy a folder](#duplicatefolder)
+1. [duplicate a folder](#duplicatefolder)
 1. [move a file](#movefile)
 1. [move a folder](#movefolder)
 1. [new file](#newfile)
-1. [move a folder](#movefolder)
 1. [new folder](#newfolder)
 1. [file/folder size](#filesize)
 1. [open a file with default program](#opendefault)
 1. [zip a folder](#zipfolder)
-1. [remove a file](#zipfolder)
+1. [unzip](#unzip)
+1. [remove a file](#removefile)
 1. [remove a folder](#removefolder)
 1. [list folder contents](#listfolder)
 
