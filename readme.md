@@ -164,4 +164,4 @@ rm -rf my_useless_folder
 ls -la my_folder
 ```
 
-Remember, you can always google or `man` the commands you are not familiar with.
+_Remember, you can always google or `man` the commands you are not familiar with._
