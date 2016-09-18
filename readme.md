@@ -12,7 +12,25 @@ However, They often require more resources, are less powerful and hard to automa
 
 As a computer expert, we want to be more efficient and do our jobs better. We know that command words may not be easily discoverable or mnemonic, so we try to list some common tasks that you might tempt to do in GUI.
 
-## copy a file
+## Quick links
+
+1. [copy a file](#copyfile)
+1. [duplicate a file](#duplicatefile)
+1. [copy a folder](#copyfolder)
+1. [copy a folder](#duplicatefolder)
+1. [move a file](#movefile)
+1. [move a folder](#movefolder)
+1. [new file](#newfile)
+1. [move a folder](#movefolder)
+1. [new folder](#newfolder)
+1. [file/folder size](#filesize)
+1. [open a file with default program](#opendefault)
+1. [zip a folder](#zipfolder)
+1. [remove a file](#zipfolder)
+1. [remove a folder](#removefolder)
+1. [list folder contents](#listfolder)
+
+## <a id="copyfile"></a>copy a file
 
 **STOP DRAG AND DROP A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE**
 
@@ -22,7 +40,7 @@ Copy `readme.txt` to the `documents` folder
 cp readme.txt documents
 ```
 
-## duplicate a file
+## <a id="duplicatefile"></a>duplicate a file
 
 **STOP RIGHT CLICK AND DUPLICATE FILE**
 
@@ -32,7 +50,7 @@ If `readme.bak.txt` file doesn't exist
 cp readme.txt readme.bak.txt
 ```
 
-## copy a folder
+## <a id="copyfolder"></a>copy a folder
 
 **STOP DRAG AND DROP A FOLDER, OR CMD/CTRL + C, CMD/CTRL + V A FOLDER**
 
@@ -42,7 +60,7 @@ Copy `myMusic` folder under `myMedia` folder
 cp -R myMusic myMedia
 ```
 
-## duplicate a folder
+## <a id="duplicatefolder"></a>duplicate a folder
 
 **STOP RIGHT CLICK AND DUPLICATE FOLDER**
 
@@ -52,7 +70,7 @@ If `myMedia` folder doesn't exist
 cp -R myMusic myMedia
 ```
 
-## move a file
+## <a id="movefile"></a>move a file
 
 **STOP DRAG AND DROP A FILE, OR CTRL + X, CTRL + V A FILE**
 
@@ -60,7 +78,7 @@ cp -R myMusic myMedia
 mv readme.txt documents
 ```
 
-## move a folder
+## <a id="movefolder"></a>move a folder
 
 **STOP DRAG AND DROP A FOLDER, OR CTRL + X, CTRL + V A FOLDER**
 
@@ -68,7 +86,7 @@ mv readme.txt documents
 mv myMedia myMusic
 ```
 
-## new file
+## <a id="newfile"></a>new file
 
 **STOP RIGHT CLICK AND CREATE A NEW FILE**
 
@@ -76,7 +94,7 @@ mv myMedia myMusic
 touch 'new file'
 ```
 
-## new folder
+## <a id="newfolder"></a>new folder
 
 **STOP RIGHT CLICK AND CREATE A NEW FOLDER**
 
@@ -90,7 +108,7 @@ or
 mkdir -p 'path/may/not/exist/untitled folder'
 ```
 
-## file/folder size
+## <a id="filesize"></a>file/folder size
 
 **STOP RIGHT CLICK AND SHOW FILE/FOLDER INFO**
 
@@ -98,7 +116,7 @@ mkdir -p 'path/may/not/exist/untitled folder'
 stat -x readme.md
 ```
 
-## open a file with default program
+## <a id="opendefault"></a>open a file with default program
 
 **STOP DOUBLE CLICKING A FILE**
 
@@ -106,7 +124,7 @@ stat -x readme.md
 open file
 ```
 
-## zip a folder
+## <a id="zipfolder"></a>zip a folder
 
 **STOP RIGHT CLICK AND COMPRESS FOLDER**
 
@@ -114,7 +132,7 @@ open file
 zip -r archive_name.zip folder_to_compress
 ```
 
-## unzip
+## <a id="unzip"></a>unzip
 
 **STOP RIGHT CLICK AND UNCOMPRESS FOLDER**
 
@@ -122,7 +140,7 @@ zip -r archive_name.zip folder_to_compress
 unzip archive_name.zip
 ```
 
-## remove a file
+## <a id="removefile"></a>remove a file
 
 **STOP RIGHT CLICK AND DELETE FILE OR DRAG IT TO RECYCLE**
 
@@ -130,7 +148,7 @@ unzip archive_name.zip
 rm my_useless_file
 ```
 
-## remove a folder
+## <a id="removefolder"></a>remove a folder
 
 **STOP RIGHT CLICK AND DELETE FOLDER OR DRAG IT TO RECYCLE**
 
@@ -138,7 +156,7 @@ rm my_useless_file
 rm -rf my_useless_folder
 ```
 
-## see my folder
+## <a id="listfolder"></a>list folder contents
 
 **STOP OPENING YOUR FINDER OR FILE EXPLORER**
 
