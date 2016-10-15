@@ -19,6 +19,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [copy a folder](#copyfolder)
 1. [duplicate a folder](#duplicatefolder)
 1. [move a file](#movefile)
+1. [rename a file](#renamefile)
 1. [move a folder](#movefolder)
 1. [new file](#newfile)
 1. [new folder](#newfolder)
@@ -76,6 +77,14 @@ cp -R myMusic myMedia
 
 ```
 mv readme.txt documents
+```
+
+## <a id="renamefile"></a>rename a file
+
+**STOP RIGHT CLICK AND RENAME A FILE**
+
+```
+mv readme.txt README.md
 ```
 
 ## <a id="movefolder"></a>move a folder
