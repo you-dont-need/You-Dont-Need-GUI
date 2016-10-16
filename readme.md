@@ -162,7 +162,7 @@ rm my_useless_file
 **STOP RIGHT CLICK AND DELETE FOLDER OR DRAG IT TO RECYCLE**
 
 ```
-rm -rf my_useless_folder
+rm -r my_useless_folder
 ```
 
 ## <a id="listfolder"></a>list folder contents
