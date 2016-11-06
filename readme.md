@@ -130,7 +130,8 @@ stat -x readme.md
 **STOP DOUBLE CLICKING A FILE**
 
 ```
-open file
+open file       # on macOS
+xdg-open file   # on Linux
 ```
 
 ## <a id="zipfolder"></a>zip a folder
