@@ -40,7 +40,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 Find all files modified more than 5 days ago
 
 ```bash
-find . -mtime +5 -exec rm {} \;
+find . -mtime +5
 ```
 
 ## <a id="copyfile"></a>copy a file
