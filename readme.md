@@ -15,6 +15,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 ## Quick links
 
 1. [find a stale file](#findFile)
+1. [show a calendar](#showCal)
 1. [copy a file](#copyfile)
 1. [duplicate a file](#duplicatefile)
 1. [copy a folder](#copyfolder)
@@ -41,6 +42,14 @@ Find all files modified more than 5 days ago
 
 ```bash
 find . -mtime +5
+```
+
+## <a id="showCal"></a>show a calendar
+
+Display a text calendar, along with the week numbers
+
+```
+cal -w
 ```
 
 ## <a id="copyfile"></a>copy a file
