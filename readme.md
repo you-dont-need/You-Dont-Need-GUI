@@ -14,6 +14,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 ## Quick links
 
+1. [find a stale file](#findFile)
 1. [copy a file](#copyfile)
 1. [duplicate a file](#duplicatefile)
 1. [copy a folder](#copyfolder)
@@ -33,6 +34,14 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [find a stale file](#findfile)
 1. [show a calendar](#showcal)
 
+
+## <a id="findFile"></a>find a stale file
+
+Find all files modified more than 5 days ago
+
+```bash
+find . -mtime +5 -exec rm {} \;
+```
 
 ## <a id="copyfile"></a>copy a file
 
