@@ -195,12 +195,30 @@ find my_folder -mtime +5
 
 ## <a id="showcal"></a>show a calendar
 
-**STOP LOOKING UP WHAT DAY IT IS BY CALENDAR WIDGETS**
+**STOP LOOKING UP THIS MONTH BY CALENDAR WIDGETS**
 
-Display a text calendar, highlighting the current day
+Display a text calendar
 
 ```
 cal
 ```
+
+## <a id="calcweek"></a>calculate next week
+
+**STOP USING WEBAPPS TO CALCULATE FUTURE DATES**
+
+What is today?
+
+```
+date +%m/%d/%Y
+```
+
+And what is next week?
+
+```
+date -d "+1 week"
+```
+
+---
 
 _Remember, you can always google or `man` the commands you are not familiar with._
