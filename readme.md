@@ -196,7 +196,7 @@ find my_folder -mtime +5
 
 ## <a id="showcal"></a>show a calendar
 
-**STOP LOOKING UP WHAT DAY IT IS BY CALENDAR WIDGETS**
+**STOP LOOKING UP WHAT THIS MONTH LOOKS LIKE BY CALENDAR WIDGETS**
 
 Display a text calendar
 
