@@ -32,6 +32,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [list folder contents](#listfolder)
 1. [find a stale file](#findfile)
 1. [show a calendar](#showcal)
+1. [calculate next week](#calcweek)
 
 
 ## <a id="copyfile"></a>copy a file
