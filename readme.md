@@ -43,10 +43,10 @@ find . -mtime +5
 
 ## <a id="showCal"></a>show a calendar
 
-Display a text calendar, along with the previous and next month
+Display a text calendar, highlighting the current day
 
 ```
-cal -3
+cal
 ```
 
 ## <a id="copyfile"></a>copy a file
