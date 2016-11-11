@@ -203,4 +203,5 @@ Display a text calendar, highlighting the current day
 cal
 ```
 
+===
 _Remember, you can always google or `man` the commands you are not familiar with._
