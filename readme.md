@@ -58,7 +58,7 @@ cp readme.txt readme.bak.txt
 Copy `myMusic` folder under `myMedia` folder
 
 ```
-cp -R myMusic myMedia
+cp -a myMusic myMedia
 ```
 
 ## <a id="duplicatefolder"></a>duplicate a folder
@@ -68,7 +68,7 @@ cp -R myMusic myMedia
 If `myMedia` folder doesn't exist
 
 ```
-cp -R myMusic myMedia
+cp -a myMusic myMedia
 ```
 
 ## <a id="movefile"></a>move a file
