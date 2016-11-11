@@ -32,6 +32,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [list folder contents](#listfolder)
 1. [find a stale file](#findfile)
 1. [show a calendar](#showcal)
+1. [find a future date](#calcdate)
 
 
 ## <a id="copyfile"></a>copy a file
@@ -197,10 +198,26 @@ find my_folder -mtime +5
 
 **STOP LOOKING UP WHAT DAY IT IS BY CALENDAR WIDGETS**
 
-Display a text calendar, highlighting the current day
+Display a text calendar
 
 ```
 cal
+```
+
+## <a id="calcdate"></a>find a future date
+
+**STOP USING WEBAPPS TO CALCULATE FUTURE DATES**
+
+What is todays date?
+
+```
+date +%m/%d/%Y
+```
+
+What about a week from now?
+
+```
+date -d "+7 days"
 ```
 
 ===
