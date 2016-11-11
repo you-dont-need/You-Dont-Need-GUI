@@ -76,8 +76,10 @@ cp -a myMusic myMedia
 **STOP DRAG AND DROP A FILE, OR CTRL + X, CTRL + V A FILE**
 
 ```
-mv readme.txt documents
+mv readme.txt documents/
 ```
+
+[For this reason](http://unix.stackexchange.com/a/50533)
 
 ## <a id="renamefile"></a>rename a file
 
