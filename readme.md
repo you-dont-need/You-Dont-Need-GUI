@@ -125,6 +125,12 @@ mkdir -p 'path/may/not/exist/untitled folder'
 stat -x readme.md
 ```
 
+or
+
+```
+du -sh readme.md
+```
+
 ## <a id="opendefault"></a>open a file with default program
 
 **STOP DOUBLE CLICKING A FILE**
