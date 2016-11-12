@@ -33,6 +33,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [tree view a folder and its subfolders](#treeview)
 1. [find a stale file](#findfile)
 1. [show a calendar](#showcal)
+1. [find a future date](#calcdate)
 
 
 ## <a id="copyfile"></a>copy a file
@@ -188,8 +189,8 @@ ls -la my_folder
 **STOP OPENING YOUR FINDER OR FILE EXPLORER**
 
 ```
-tree # on Linux
-find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g' # on macOS
+tree                                                       # on Linux
+find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'     # on macOS
 ```
 ## <a id="findfile"></a>find a stale file
 
@@ -203,12 +204,29 @@ find my_folder -mtime +5
 
 ## <a id="showcal"></a>show a calendar
 
-**STOP LOOKING UP WHAT DAY IT IS BY CALENDAR WIDGETS**
+**STOP LOOKING UP WHAT THIS MONTH LOOKS LIKE BY CALENDAR WIDGETS**
 
-Display a text calendar, highlighting the current day
+Display a text calendar
 
 ```
 cal
+```
+
+## <a id="calcdate"></a>find a future date
+
+**STOP USING WEBAPPS TO CALCULATE FUTURE DATES**
+
+What is todays date?
+
+```
+date +%m/%d/%Y
+```
+
+What about a week from now?
+
+```bash
+date -d "+7 days"                                          # On Linux
+date -j -v+7d                                              # On MacOS
 ```
 
 ===
