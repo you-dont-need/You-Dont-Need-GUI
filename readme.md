@@ -30,6 +30,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [remove a file](#removefile)
 1. [remove a folder](#removefolder)
 1. [list folder contents](#listfolder)
+1. [tree view a folder and its subfolders](#treeview)
 1. [find a stale file](#findfile)
 1. [show a calendar](#showcal)
 
@@ -182,7 +183,14 @@ rm -r my_useless_folder
 ```
 ls -la my_folder
 ```
+## <a id="treeview"></a>tree view a folder and its subfolders
 
+**STOP OPENING YOUR FINDER OR FILE EXPLORER**
+
+```
+tree # on Linux
+find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g' # on macOS
+```
 ## <a id="findfile"></a>find a stale file
 
 **STOP USING YOUR FILE EXPLORER TO FIND A FILE**
