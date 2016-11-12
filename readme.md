@@ -216,8 +216,9 @@ date +%m/%d/%Y
 
 What about a week from now?
 
-```
-date -d "+7 days"
+```bash
+date -d "+7 days"                            # On linux
+date -j -v+7d                                # On osx
 ```
 
 ===
