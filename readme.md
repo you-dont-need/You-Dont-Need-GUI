@@ -189,8 +189,8 @@ ls -la my_folder
 **STOP OPENING YOUR FINDER OR FILE EXPLORER**
 
 ```
-tree # on Linux
-find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g' # on macOS
+tree                                                       # on Linux
+find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'     # on macOS
 ```
 ## <a id="findfile"></a>find a stale file
 
@@ -225,8 +225,8 @@ date +%m/%d/%Y
 What about a week from now?
 
 ```bash
-date -d "+7 days"                            # On linux
-date -j -v+7d                                # On osx
+date -d "+7 days"                                          # On Linux
+date -j -v+7d                                              # On MacOS
 ```
 
 ===
