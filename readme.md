@@ -189,7 +189,7 @@ ls -la my_folder
 
 ```
 tree # on Linux
-find . -print | sed -e 's; # on macOS
+find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g' # on macOS
 ```
 ## <a id="findfile"></a>find a stale file
 
