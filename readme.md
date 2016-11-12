@@ -41,7 +41,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 Copy `readme.txt` to the `documents` folder
 
-```
+```bash
 cp readme.txt documents
 ```
 
@@ -51,7 +51,7 @@ cp readme.txt documents
 
 If `readme.bak.txt` file doesn't exist
 
-```
+```bash
 cp readme.txt readme.bak.txt
 ```
 
@@ -61,7 +61,7 @@ cp readme.txt readme.bak.txt
 
 Copy `myMusic` folder under `myMedia` folder
 
-```
+```bash
 cp -a myMusic myMedia
 ```
 
@@ -71,7 +71,7 @@ cp -a myMusic myMedia
 
 If `myMedia` folder doesn't exist
 
-```
+```bash
 cp -a myMusic myMedia
 ```
 
@@ -79,7 +79,7 @@ cp -a myMusic myMedia
 
 **STOP DRAG AND DROP A FILE, OR CTRL + X, CTRL + V A FILE**
 
-```
+```bash
 mv readme.txt documents
 ```
 
@@ -87,7 +87,7 @@ mv readme.txt documents
 
 **STOP RIGHT CLICK AND RENAME A FILE**
 
-```
+```bash
 mv readme.txt README.md
 ```
 
@@ -95,7 +95,7 @@ mv readme.txt README.md
 
 **STOP DRAG AND DROP A FOLDER, OR CTRL + X, CTRL + V A FOLDER**
 
-```
+```bash
 mv myMedia myMusic
 ```
 
@@ -103,7 +103,7 @@ mv myMedia myMusic
 
 **STOP RIGHT CLICK AND CREATE A NEW FILE**
 
-```
+```bash
 touch 'new file'
 ```
 
@@ -111,13 +111,13 @@ touch 'new file'
 
 **STOP RIGHT CLICK AND CREATE A NEW FOLDER**
 
-```
+```bash
 mkdir 'untitled folder'
 ```
 
 or
 
-```
+```bash
 mkdir -p 'path/may/not/exist/untitled folder'
 ```
 
@@ -125,13 +125,13 @@ mkdir -p 'path/may/not/exist/untitled folder'
 
 **STOP RIGHT CLICK AND SHOW FILE/FOLDER INFO**
 
-```
+```bash
 stat -x readme.md
 ```
 
 or
 
-```
+```bash
 du -sh readme.md
 ```
 
@@ -139,7 +139,7 @@ du -sh readme.md
 
 **STOP DOUBLE CLICKING A FILE**
 
-```
+```bash
 open file       # on macOS
 xdg-open file   # on Linux
 ```
@@ -148,7 +148,7 @@ xdg-open file   # on Linux
 
 **STOP RIGHT CLICK AND COMPRESS FOLDER**
 
-```
+```bash
 zip -r archive_name.zip folder_to_compress
 ```
 
@@ -156,7 +156,7 @@ zip -r archive_name.zip folder_to_compress
 
 **STOP RIGHT CLICK AND UNCOMPRESS FOLDER**
 
-```
+```bash
 unzip archive_name.zip
 ```
 
@@ -164,7 +164,7 @@ unzip archive_name.zip
 
 **STOP RIGHT CLICK AND DELETE FILE OR DRAG IT TO RECYCLE**
 
-```
+```bash
 rm my_useless_file
 ```
 
@@ -172,7 +172,7 @@ rm my_useless_file
 
 **STOP RIGHT CLICK AND DELETE FOLDER OR DRAG IT TO RECYCLE**
 
-```
+```bash
 rm -r my_useless_folder
 ```
 
@@ -180,14 +180,14 @@ rm -r my_useless_folder
 
 **STOP OPENING YOUR FINDER OR FILE EXPLORER**
 
-```
+```bash
 ls -la my_folder
 ```
 ## <a id="treeview"></a>tree view a folder and its subfolders
 
 **STOP OPENING YOUR FINDER OR FILE EXPLORER**
 
-```
+```bash
 tree # on Linux
 find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g' # on macOS
 ```
@@ -207,7 +207,7 @@ find my_folder -mtime +5
 
 Display a text calendar, highlighting the current day
 
-```
+```bash
 cal
 ```
 
