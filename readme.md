@@ -107,6 +107,10 @@ mv myMedia myMusic
 ```
 touch 'new file'
 ```
+or
+```
+> 'new file'
+```
 
 ## <a id="newfolder"></a>new folder
 
