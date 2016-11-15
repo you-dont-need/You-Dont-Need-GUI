@@ -79,7 +79,7 @@ cp -a myMusic myMedia
 mv readme.txt documents/
 ```
 
-[For this reason](http://unix.stackexchange.com/a/50533)
+**Always** use a trailing slash when moving files, [for this reason](http://unix.stackexchange.com/a/50533).
 
 ## <a id="renamefile"></a>rename a file
 
