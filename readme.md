@@ -21,12 +21,12 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [move a file](#movefile)
 1. [rename a file](#renamefile)
 1. [move a folder](#movefolder)
-1. [new file](#newfile)
-1. [new folder](#newfolder)
-1. [file/folder size](#filesize)
-1. [open a file with default program](#opendefault)
+1. [create a new file](#newfile)
+1. [create a new folder](#newfolder)
+1. [show file/folder size](#filesize)
+1. [open a file with the default program](#opendefault)
 1. [zip a folder](#zipfolder)
-1. [unzip](#unzip)
+1. [unzip a folder](#unzip)
 1. [remove a file](#removefile)
 1. [remove a folder](#removefolder)
 1. [list folder contents](#listfolder)
@@ -48,7 +48,7 @@ cp readme.txt documents
 
 ## <a id="duplicatefile"></a>duplicate a file
 
-**STOP RIGHT CLICK AND DUPLICATE FILE**
+**STOP RIGHT CLICK AND DUPLICATE A FILE**
 
 If `readme.bak.txt` file doesn't exist
 
@@ -68,7 +68,7 @@ cp -a myMusic myMedia
 
 ## <a id="duplicatefolder"></a>duplicate a folder
 
-**STOP RIGHT CLICK AND DUPLICATE FOLDER**
+**STOP RIGHT CLICK AND DUPLICATE A FOLDER**
 
 If `myMedia` folder doesn't exist
 
@@ -102,7 +102,7 @@ mv readme.txt README.md
 mv myMedia myMusic
 ```
 
-## <a id="newfile"></a>new file
+## <a id="newfile"></a>create a new file
 
 **STOP RIGHT CLICK AND CREATE A NEW FILE**
 
@@ -114,7 +114,7 @@ or
 > 'new file'
 ```
 
-## <a id="newfolder"></a>new folder
+## <a id="newfolder"></a>create a new folder
 
 **STOP RIGHT CLICK AND CREATE A NEW FOLDER**
 
@@ -128,7 +128,7 @@ or
 mkdir -p 'path/may/not/exist/untitled folder'
 ```
 
-## <a id="filesize"></a>file/folder size
+## <a id="filesize"></a>show file/folder size
 
 **STOP RIGHT CLICK AND SHOW FILE/FOLDER INFO**
 
@@ -142,7 +142,7 @@ or
 du -sh readme.md
 ```
 
-## <a id="opendefault"></a>open a file with default program
+## <a id="opendefault"></a>open a file with the default program
 
 **STOP DOUBLE CLICKING A FILE**
 
@@ -159,7 +159,7 @@ xdg-open file   # on Linux
 zip -r archive_name.zip folder_to_compress
 ```
 
-## <a id="unzip"></a>unzip
+## <a id="unzip"></a>unzip a folder
 
 **STOP RIGHT CLICK AND UNCOMPRESS FOLDER**
 
@@ -169,7 +169,7 @@ unzip archive_name.zip
 
 ## <a id="removefile"></a>remove a file
 
-**STOP RIGHT CLICK AND DELETE FILE OR DRAG IT TO RECYCLE**
+**STOP RIGHT CLICK AND DELETE A FILE PERMANENTLY**
 
 ```
 rm my_useless_file
@@ -178,7 +178,7 @@ IMPORTANT: The rm command deletes my_useless_file permanently, which is equivale
 
 ## <a id="removefolder"></a>remove a folder
 
-**STOP RIGHT CLICK AND DELETE FOLDER OR DRAG IT TO RECYCLE**
+**STOP RIGHT CLICK AND DELETE A FOLDER PERMANENTLY**
 
 ```
 rm -r my_useless_folder
