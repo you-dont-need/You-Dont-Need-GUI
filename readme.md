@@ -34,6 +34,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [find a stale file](#findfile)
 1. [show a calendar](#showcal)
 1. [find a future date](#calcdate)
+1. [use a calculator](#calculator)
 
 
 ## <a id="copyfile"></a>copy a file
@@ -234,6 +235,16 @@ What about a week from now?
 ```bash
 date -d "+7 days"                                          # On Linux
 date -j -v+7d                                              # On MacOS
+```
+
+## <a id="calculator"></a>use a calculator
+
+**STOP USING CALCULATOR WIDGET**
+
+Want to use a calculator?
+
+```
+bc
 ```
 
 ===
