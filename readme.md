@@ -65,6 +65,8 @@ cp readme.txt readme.bak.txt
 Copy `myMusic` folder to the `myMedia` folder
 
 ```
+cp -a myMusic myMedia/
+# or
 cp -a myMusic/ myMedia/myMusic/
 ```
 
@@ -101,6 +103,8 @@ mv readme.txt README.md
 **STOP DRAG AND DROP A FOLDER, OR CTRL + X, CTRL + V A FOLDER**
 
 ```
+mv myMedia myMusic/
+# or
 mv myMedia/ myMusic/myMedia
 ```
 
