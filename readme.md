@@ -52,8 +52,6 @@ cp readme.txt documents/
 
 **STOP RIGHT CLICK AND DUPLICATE A FILE**
 
-If `readme.bak.txt` file doesn't exist
-
 ```
 cp readme.txt readme.bak.txt
 ```
@@ -74,10 +72,10 @@ cp -a myMusic/ myMedia/myMusic/
 
 **STOP RIGHT CLICK AND DUPLICATE A FOLDER**
 
-If `myMedia` folder doesn't exist
-
 ```
 cp -a myMusic/ myMedia/
+# or if `myMedia` folder doesn't exist
+cp -a myMusic myMedia/
 ```
 
 ## <a id="movefile"></a>move a file
