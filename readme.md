@@ -21,6 +21,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [move a file](#movefile)
 1. [rename a file](#renamefile)
 1. [move a folder](#movefolder)
+1. [rename a folder](#renamefolder)
 1. [create a new file](#newfile)
 1. [create a new folder](#newfolder)
 1. [show file/folder size](#filesize)
@@ -44,7 +45,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 Copy `readme.txt` to the `documents` folder
 
 ```
-cp readme.txt documents
+cp readme.txt documents/
 ```
 
 ## <a id="duplicatefile"></a>duplicate a file
@@ -61,10 +62,10 @@ cp readme.txt readme.bak.txt
 
 **STOP DRAG AND DROP A FOLDER, OR CMD/CTRL + C, CMD/CTRL + V A FOLDER**
 
-Copy `myMusic` folder under `myMedia` folder
+Copy `myMusic` folder to the `myMedia` folder
 
 ```
-cp -a myMusic myMedia
+cp -a myMusic/ myMedia/myMusic/
 ```
 
 ## <a id="duplicatefolder"></a>duplicate a folder
@@ -74,7 +75,7 @@ cp -a myMusic myMedia
 If `myMedia` folder doesn't exist
 
 ```
-cp -a myMusic myMedia
+cp -a myMusic/ myMedia/
 ```
 
 ## <a id="movefile"></a>move a file
@@ -100,7 +101,15 @@ mv readme.txt README.md
 **STOP DRAG AND DROP A FOLDER, OR CTRL + X, CTRL + V A FOLDER**
 
 ```
-mv myMedia myMusic
+mv myMedia/ myMusic/myMedia
+```
+
+## <a id="renamefolder"></a>rename a folder
+
+**STOP RIGHT CLICK AND RENAME A FOLDER**
+
+```
+mv myMedia/ myMusic/
 ```
 
 ## <a id="newfile"></a>create a new file
