@@ -145,13 +145,8 @@ mkdir -p 'path/may/not/exist/untitled folder'
 **STOP RIGHT CLICK AND SHOW FILE/FOLDER INFO**
 
 ```
-stat -x readme.md
-```
-
-or
-
-```
-du -sh readme.md
+stat -x readme.md  # on macOS
+du -sh readme.md   # on Linux
 ```
 
 ## <a id="opendefault"></a>open a file with the default program
