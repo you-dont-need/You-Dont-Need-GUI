@@ -22,6 +22,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [rename a file](#renamefile)
 1. [move a folder](#movefolder)
 1. [rename a folder](#renamefolder)
+1. [merge folders](#mergefolders)
 1. [create a new file](#newfile)
 1. [create a new folder](#newfolder)
 1. [show file/folder size](#filesize)
@@ -113,6 +114,14 @@ mv myMedia/ myMusic/myMedia
 
 ```
 mv myMedia/ myMusic/
+```
+
+## <a id="mergefolders"></a>merge folders
+
+**STOP DRAG AND DROP TO MERGE FOLDERS**
+
+```
+rsync -a /images/ /images2/
 ```
 
 ## <a id="newfile"></a>create a new file
