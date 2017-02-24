@@ -36,6 +36,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [show a calendar](#showcal)
 1. [find a future date](#calcdate)
 1. [use a calculator](#calculator)
+1. [kill a program](#killprogram)
 
 
 ## <a id="copyfile"></a>copy a file
@@ -256,6 +257,14 @@ Want to use a calculator?
 
 ```
 bc
+```
+
+## <a id="killprogram"></a>force quit a program
+
+**STOP FORCE QUITE A PROGRAM USING GUI**
+
+```
+killall program_name
 ```
 
 ===
