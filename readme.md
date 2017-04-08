@@ -3,6 +3,7 @@
 <details>
 It's for noobs :)
 </details>
+<br />
 
 Graphical user interfaces are super friendly to computer users. They were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs).
 
