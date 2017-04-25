@@ -277,5 +277,5 @@ bc
 killall program_name
 ```
 
-===
+---
 _Remember, you can always google or `man` the commands you are not familiar with._
