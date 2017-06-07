@@ -47,7 +47,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 Copy `readme.txt` to the `documents` folder
 
-```
+```shell
 cp readme.txt documents/
 ```
 
@@ -55,7 +55,7 @@ cp readme.txt documents/
 
 **STOP RIGHT CLICK AND DUPLICATE A FILE**
 
-```
+```shell
 cp readme.txt readme.bak.txt
 ```
 
@@ -65,7 +65,7 @@ cp readme.txt readme.bak.txt
 
 Copy `myMusic` folder to the `myMedia` folder
 
-```
+```shell
 cp -a myMusic myMedia/
 # or
 cp -a myMusic/ myMedia/myMusic/
@@ -75,7 +75,7 @@ cp -a myMusic/ myMedia/myMusic/
 
 **STOP RIGHT CLICK AND DUPLICATE A FOLDER**
 
-```
+```shell
 cp -a myMusic/ myMedia/
 # or if `myMedia` folder doesn't exist
 cp -a myMusic myMedia/
@@ -85,7 +85,7 @@ cp -a myMusic myMedia/
 
 **STOP DRAG AND DROP A FILE, OR CTRL + X, CTRL + V A FILE**
 
-```
+```shell
 mv readme.txt documents/
 ```
 
@@ -95,7 +95,7 @@ mv readme.txt documents/
 
 **STOP RIGHT CLICK AND RENAME A FILE**
 
-```
+```shell
 mv readme.txt README.md
 ```
 
@@ -103,7 +103,7 @@ mv readme.txt README.md
 
 **STOP DRAG AND DROP A FOLDER, OR CTRL + X, CTRL + V A FOLDER**
 
-```
+```shell
 mv myMedia myMusic/
 # or
 mv myMedia/ myMusic/myMedia
@@ -113,7 +113,7 @@ mv myMedia/ myMusic/myMedia
 
 **STOP RIGHT CLICK AND RENAME A FOLDER**
 
-```
+```shell
 mv myMedia/ myMusic/
 ```
 
@@ -121,7 +121,7 @@ mv myMedia/ myMusic/
 
 **STOP DRAG AND DROP TO MERGE FOLDERS**
 
-```
+```shell
 rsync -a /images/ /images2/
 ```
 
@@ -129,11 +129,9 @@ rsync -a /images/ /images2/
 
 **STOP RIGHT CLICK AND CREATE A NEW FILE**
 
-```
+```shell
 touch 'new file'
-```
-or
-```
+# or
 > 'new file'
 ```
 
@@ -141,13 +139,9 @@ or
 
 **STOP RIGHT CLICK AND CREATE A NEW FOLDER**
 
-```
+```shell
 mkdir 'untitled folder'
-```
-
-or
-
-```
+# or
 mkdir -p 'path/may/not/exist/untitled folder'
 ```
 
@@ -155,13 +149,9 @@ mkdir -p 'path/may/not/exist/untitled folder'
 
 **STOP RIGHT CLICK AND SHOW FILE/FOLDER INFO**
 
-```
+```shell
 stat -x readme.md
-```
-
-or
-
-```
+# or
 du -sh readme.md
 ```
 
@@ -169,16 +159,16 @@ du -sh readme.md
 
 **STOP DOUBLE CLICKING A FILE**
 
-```
-open file       # on macOS
+```shell
 xdg-open file   # on Linux
+open file       # on MacOS
 ```
 
 ## <a id="zipfolder"></a>zip a folder
 
 **STOP RIGHT CLICK AND COMPRESS FOLDER**
 
-```
+```shell
 zip -r archive_name.zip folder_to_compress
 ```
 
@@ -186,7 +176,7 @@ zip -r archive_name.zip folder_to_compress
 
 **STOP RIGHT CLICK AND UNCOMPRESS FOLDER**
 
-```
+```shell
 unzip archive_name.zip
 ```
 
@@ -194,16 +184,17 @@ unzip archive_name.zip
 
 **STOP RIGHT CLICK AND DELETE A FILE PERMANENTLY**
 
-```
+```shell
 rm my_useless_file
 ```
+
 IMPORTANT: The rm command deletes my_useless_file permanently, which is equivalent to move my_useless_file to Recycle Bin and hit Empty Recycle Bin.
 
 ## <a id="removefolder"></a>remove a folder
 
 **STOP RIGHT CLICK AND DELETE A FOLDER PERMANENTLY**
 
-```
+```shell
 rm -r my_useless_folder
 ```
 
@@ -211,24 +202,26 @@ rm -r my_useless_folder
 
 **STOP OPENING YOUR FINDER OR FILE EXPLORER**
 
-```
+```shell
 ls -la my_folder
 ```
+
 ## <a id="treeview"></a>tree view a folder and its subfolders
 
 **STOP OPENING YOUR FINDER OR FILE EXPLORER**
 
-```
+```shell
 tree                                                       # on Linux
-find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'     # on macOS
+find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'     # on MacOS
 ```
+
 ## <a id="findfile"></a>find a stale file
 
 **STOP USING YOUR FILE EXPLORER TO FIND A FILE**
 
 Find all files modified more than 5 days ago
 
-```bash
+```shell
 find my_folder -mtime +5
 ```
 
@@ -238,7 +231,7 @@ find my_folder -mtime +5
 
 Display a text calendar
 
-```
+```shell
 cal
 ```
 
@@ -248,15 +241,15 @@ cal
 
 What is todays date?
 
-```
+```shell
 date +%m/%d/%Y
 ```
 
 What about a week from now?
 
-```bash
-date -d "+7 days"                                          # On Linux
-date -j -v+7d                                              # On MacOS
+```shell
+date -d "+7 days"                                          # on Linux
+date -j -v+7d                                              # on MacOS
 ```
 
 ## <a id="calculator"></a>use a calculator
@@ -265,7 +258,7 @@ date -j -v+7d                                              # On MacOS
 
 Want to use a calculator?
 
-```
+```shell
 bc
 ```
 
@@ -273,7 +266,7 @@ bc
 
 **STOP FORCE QUITE A PROGRAM USING GUI**
 
-```
+```shell
 killall program_name
 ```
 
