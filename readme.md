@@ -15,33 +15,33 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 ## Quick links
 
-1. [copy a file](#copyfile)
-1. [duplicate a file](#duplicatefile)
-1. [copy a folder](#copyfolder)
-1. [duplicate a folder](#duplicatefolder)
-1. [move a file](#movefile)
-1. [rename a file](#renamefile)
-1. [move a folder](#movefolder)
-1. [rename a folder](#renamefolder)
-1. [merge folders](#mergefolders)
-1. [create a new file](#newfile)
-1. [create a new folder](#newfolder)
-1. [show file/folder size](#filesize)
-1. [open a file with the default program](#opendefault)
-1. [zip a folder](#zipfolder)
-1. [unzip a folder](#unzip)
-1. [remove a file](#removefile)
-1. [remove a folder](#removefolder)
-1. [list folder contents](#listfolder)
-1. [tree view a folder and its subfolders](#treeview)
-1. [find a stale file](#findfile)
-1. [show a calendar](#showcal)
-1. [find a future date](#calcdate)
-1. [use a calculator](#calculator)
-1. [kill a program](#killprogram)
+1. [copy a file](#copy-a-file)
+1. [duplicate a file](#duplicate-a-file)
+1. [copy a folder](#copy-a-folder)
+1. [duplicate a folder](#duplicate-a-folder)
+1. [move a file](#move-a-file)
+1. [rename a file](#rename-a-file)
+1. [move a folder](#move-a-folder)
+1. [rename a folder](#rename-a-folder)
+1. [merge folders](#merge-folders)
+1. [create a new file](#create-a-new-file)
+1. [create a new folder](#create-a-new-folder)
+1. [show file/folder size](#show-file-folder-size)
+1. [open a file with the default program](#open-a-file-with-the-default-program)
+1. [zip a folder](#zip-a-folder)
+1. [unzip a folder](#unzip-a-folder)
+1. [remove a file](#remove-a-file)
+1. [remove a folder](#remove-a-folder)
+1. [list folder contents](#list-folder-contents)
+1. [tree view a folder and its subfolders](#tree-view-a-folder-and-its-subfolders)
+1. [find a stale file](#find-a-stale-file)
+1. [show a calendar](#show-a-calendar)
+1. [find a future date](#find-a-future-date)
+1. [use a calculator](#use-a-calculator)
+1. [kill a program](#kill-a-program)
 
 
-## <a id="copyfile"></a>copy a file
+## copy a file
 
 **STOP DRAG AND DROP A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE** :-1:
 
@@ -51,7 +51,7 @@ Copy `readme.txt` to the `documents` folder
 cp readme.txt documents/
 ```
 
-## <a id="duplicatefile"></a>duplicate a file
+## duplicate a file
 
 **STOP RIGHT CLICK AND DUPLICATE A FILE** :-1:
 
@@ -59,7 +59,7 @@ cp readme.txt documents/
 cp readme.txt readme.bak.txt
 ```
 
-## <a id="copyfolder"></a>copy a folder
+## copy a folder
 
 **STOP DRAG AND DROP A FOLDER, OR CMD/CTRL + C, CMD/CTRL + V A FOLDER** :-1:
 
@@ -71,7 +71,7 @@ cp -a myMusic myMedia/
 cp -a myMusic/ myMedia/myMusic/
 ```
 
-## <a id="duplicatefolder"></a>duplicate a folder
+## duplicate a folder
 
 **STOP RIGHT CLICK AND DUPLICATE A FOLDER** :-1:
 
@@ -81,7 +81,7 @@ cp -a myMusic/ myMedia/
 cp -a myMusic myMedia/
 ```
 
-## <a id="movefile"></a>move a file
+## move a file
 
 **STOP DRAG AND DROP A FILE, OR CTRL + X, CTRL + V A FILE** :-1:
 
@@ -91,7 +91,7 @@ mv readme.txt documents/
 
 **Always** use a trailing slash when moving files, [for this reason](http://unix.stackexchange.com/a/50533).
 
-## <a id="renamefile"></a>rename a file
+## rename a file
 
 **STOP RIGHT CLICK AND RENAME A FILE** :-1:
 
@@ -99,7 +99,7 @@ mv readme.txt documents/
 mv readme.txt README.md
 ```
 
-## <a id="movefolder"></a>move a folder
+## move a folder
 
 **STOP DRAG AND DROP A FOLDER, OR CTRL + X, CTRL + V A FOLDER** :-1:
 
@@ -109,7 +109,7 @@ mv myMedia myMusic/
 mv myMedia/ myMusic/myMedia
 ```
 
-## <a id="renamefolder"></a>rename a folder
+## rename a folder
 
 **STOP RIGHT CLICK AND RENAME A FOLDER** :-1:
 
@@ -117,7 +117,7 @@ mv myMedia/ myMusic/myMedia
 mv myMedia/ myMusic/
 ```
 
-## <a id="mergefolders"></a>merge folders
+## merge folders
 
 **STOP DRAG AND DROP TO MERGE FOLDERS** :-1:
 
@@ -125,7 +125,7 @@ mv myMedia/ myMusic/
 rsync -a /images/ /images2/
 ```
 
-## <a id="newfile"></a>create a new file
+## create a new file
 
 **STOP RIGHT CLICK AND CREATE A NEW FILE** :-1:
 
@@ -135,7 +135,7 @@ touch 'new file'
 > 'new file'
 ```
 
-## <a id="newfolder"></a>create a new folder
+## create a new folder
 
 **STOP RIGHT CLICK AND CREATE A NEW FOLDER** :-1:
 
@@ -145,7 +145,7 @@ mkdir 'untitled folder'
 mkdir -p 'path/may/not/exist/untitled folder'
 ```
 
-## <a id="filesize"></a>show file/folder size
+## show file/folder size
 
 **STOP RIGHT CLICK AND SHOW FILE/FOLDER INFO** :-1:
 
@@ -155,7 +155,7 @@ stat -x readme.md
 du -sh readme.md
 ```
 
-## <a id="opendefault"></a>open a file with the default program
+## open a file with the default program
 
 **STOP DOUBLE CLICKING A FILE** :-1:
 
@@ -164,7 +164,7 @@ xdg-open file   # on Linux
 open file       # on MacOS
 ```
 
-## <a id="zipfolder"></a>zip a folder
+## zip a folder
 
 **STOP RIGHT CLICK AND COMPRESS FOLDER** :-1:
 
@@ -172,7 +172,7 @@ open file       # on MacOS
 zip -r archive_name.zip folder_to_compress
 ```
 
-## <a id="unzip"></a>unzip a folder
+## unzip a folder
 
 **STOP RIGHT CLICK AND UNCOMPRESS FOLDER** :-1:
 
@@ -180,7 +180,7 @@ zip -r archive_name.zip folder_to_compress
 unzip archive_name.zip
 ```
 
-## <a id="removefile"></a>remove a file
+## remove a file
 
 **STOP RIGHT CLICK AND DELETE A FILE PERMANENTLY** :-1:
 
@@ -190,7 +190,7 @@ rm my_useless_file
 
 IMPORTANT: The rm command deletes my_useless_file permanently, which is equivalent to move my_useless_file to Recycle Bin and hit Empty Recycle Bin.
 
-## <a id="removefolder"></a>remove a folder
+## remove a folder
 
 **STOP RIGHT CLICK AND DELETE A FOLDER PERMANENTLY** :-1:
 
@@ -198,7 +198,7 @@ IMPORTANT: The rm command deletes my_useless_file permanently, which is equivale
 rm -r my_useless_folder
 ```
 
-## <a id="listfolder"></a>list folder contents
+## list folder contents
 
 **STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
@@ -206,7 +206,7 @@ rm -r my_useless_folder
 ls -la my_folder
 ```
 
-## <a id="treeview"></a>tree view a folder and its subfolders
+## tree view a folder and its subfolders
 
 **STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
@@ -215,7 +215,7 @@ tree                                                       # on Linux
 find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'     # on MacOS
 ```
 
-## <a id="findfile"></a>find a stale file
+## find a stale file
 
 **STOP USING YOUR FILE EXPLORER TO FIND A FILE** :-1:
 
@@ -225,7 +225,7 @@ Find all files modified more than 5 days ago
 find my_folder -mtime +5
 ```
 
-## <a id="showcal"></a>show a calendar
+## show a calendar
 
 **STOP LOOKING UP WHAT THIS MONTH LOOKS LIKE BY CALENDAR WIDGETS** :-1:
 
@@ -235,7 +235,7 @@ Display a text calendar
 cal
 ```
 
-## <a id="calcdate"></a>find a future date
+## find a future date
 
 **STOP USING WEBAPPS TO CALCULATE FUTURE DATES** :-1:
 
@@ -252,7 +252,7 @@ date -d "+7 days"                                          # on Linux
 date -j -v+7d                                              # on MacOS
 ```
 
-## <a id="calculator"></a>use a calculator
+## use a calculator
 
 **STOP USING CALCULATOR WIDGET** :-1:
 
@@ -262,7 +262,7 @@ Want to use a calculator?
 bc
 ```
 
-## <a id="killprogram"></a>force quit a program
+## force quit a program
 
 **STOP FORCE QUITE A PROGRAM USING GUI** :-1:
 
