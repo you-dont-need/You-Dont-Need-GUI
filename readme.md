@@ -26,7 +26,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [merge folders](#merge-folders)
 1. [create a new file](#create-a-new-file)
 1. [create a new folder](#create-a-new-folder)
-1. [show file/folder size](#show-file-folder-size)
+1. [show file/folder size](#show-filefolder-size)
 1. [open a file with the default program](#open-a-file-with-the-default-program)
 1. [zip a folder](#zip-a-folder)
 1. [unzip a folder](#unzip-a-folder)
