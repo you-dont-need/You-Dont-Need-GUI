@@ -38,7 +38,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [show a calendar](#show-a-calendar)
 1. [find a future date](#find-a-future-date)
 1. [use a calculator](#use-a-calculator)
-1. [kill a program](#kill-a-program)
+1. [force quit a program](#force-quit-a-program)
 
 
 ## copy a file
