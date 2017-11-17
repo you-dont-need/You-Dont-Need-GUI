@@ -43,7 +43,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 ## <a id="copyfile"></a>copy a file
 
-**STOP DRAG AND DROP A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE**
+**STOP DRAG AND DROP A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE** :-1:
 
 Copy `readme.txt` to the `documents` folder
 
@@ -53,7 +53,7 @@ cp readme.txt documents/
 
 ## <a id="duplicatefile"></a>duplicate a file
 
-**STOP RIGHT CLICK AND DUPLICATE A FILE**
+**STOP RIGHT CLICK AND DUPLICATE A FILE** :-1:
 
 ```shell
 cp readme.txt readme.bak.txt
@@ -61,7 +61,7 @@ cp readme.txt readme.bak.txt
 
 ## <a id="copyfolder"></a>copy a folder
 
-**STOP DRAG AND DROP A FOLDER, OR CMD/CTRL + C, CMD/CTRL + V A FOLDER**
+**STOP DRAG AND DROP A FOLDER, OR CMD/CTRL + C, CMD/CTRL + V A FOLDER** :-1:
 
 Copy `myMusic` folder to the `myMedia` folder
 
@@ -73,7 +73,7 @@ cp -a myMusic/ myMedia/myMusic/
 
 ## <a id="duplicatefolder"></a>duplicate a folder
 
-**STOP RIGHT CLICK AND DUPLICATE A FOLDER**
+**STOP RIGHT CLICK AND DUPLICATE A FOLDER** :-1:
 
 ```shell
 cp -a myMusic/ myMedia/
@@ -83,7 +83,7 @@ cp -a myMusic myMedia/
 
 ## <a id="movefile"></a>move a file
 
-**STOP DRAG AND DROP A FILE, OR CTRL + X, CTRL + V A FILE**
+**STOP DRAG AND DROP A FILE, OR CTRL + X, CTRL + V A FILE** :-1:
 
 ```shell
 mv readme.txt documents/
@@ -93,7 +93,7 @@ mv readme.txt documents/
 
 ## <a id="renamefile"></a>rename a file
 
-**STOP RIGHT CLICK AND RENAME A FILE**
+**STOP RIGHT CLICK AND RENAME A FILE** :-1:
 
 ```shell
 mv readme.txt README.md
@@ -101,7 +101,7 @@ mv readme.txt README.md
 
 ## <a id="movefolder"></a>move a folder
 
-**STOP DRAG AND DROP A FOLDER, OR CTRL + X, CTRL + V A FOLDER**
+**STOP DRAG AND DROP A FOLDER, OR CTRL + X, CTRL + V A FOLDER** :-1:
 
 ```shell
 mv myMedia myMusic/
@@ -111,7 +111,7 @@ mv myMedia/ myMusic/myMedia
 
 ## <a id="renamefolder"></a>rename a folder
 
-**STOP RIGHT CLICK AND RENAME A FOLDER**
+**STOP RIGHT CLICK AND RENAME A FOLDER** :-1:
 
 ```shell
 mv myMedia/ myMusic/
@@ -119,7 +119,7 @@ mv myMedia/ myMusic/
 
 ## <a id="mergefolders"></a>merge folders
 
-**STOP DRAG AND DROP TO MERGE FOLDERS**
+**STOP DRAG AND DROP TO MERGE FOLDERS** :-1:
 
 ```shell
 rsync -a /images/ /images2/
@@ -127,7 +127,7 @@ rsync -a /images/ /images2/
 
 ## <a id="newfile"></a>create a new file
 
-**STOP RIGHT CLICK AND CREATE A NEW FILE**
+**STOP RIGHT CLICK AND CREATE A NEW FILE** :-1:
 
 ```shell
 touch 'new file'
@@ -137,7 +137,7 @@ touch 'new file'
 
 ## <a id="newfolder"></a>create a new folder
 
-**STOP RIGHT CLICK AND CREATE A NEW FOLDER**
+**STOP RIGHT CLICK AND CREATE A NEW FOLDER** :-1:
 
 ```shell
 mkdir 'untitled folder'
@@ -147,7 +147,7 @@ mkdir -p 'path/may/not/exist/untitled folder'
 
 ## <a id="filesize"></a>show file/folder size
 
-**STOP RIGHT CLICK AND SHOW FILE/FOLDER INFO**
+**STOP RIGHT CLICK AND SHOW FILE/FOLDER INFO** :-1:
 
 ```shell
 stat -x readme.md
@@ -157,7 +157,7 @@ du -sh readme.md
 
 ## <a id="opendefault"></a>open a file with the default program
 
-**STOP DOUBLE CLICKING A FILE**
+**STOP DOUBLE CLICKING A FILE** :-1:
 
 ```shell
 xdg-open file   # on Linux
@@ -166,7 +166,7 @@ open file       # on MacOS
 
 ## <a id="zipfolder"></a>zip a folder
 
-**STOP RIGHT CLICK AND COMPRESS FOLDER**
+**STOP RIGHT CLICK AND COMPRESS FOLDER** :-1:
 
 ```shell
 zip -r archive_name.zip folder_to_compress
@@ -174,7 +174,7 @@ zip -r archive_name.zip folder_to_compress
 
 ## <a id="unzip"></a>unzip a folder
 
-**STOP RIGHT CLICK AND UNCOMPRESS FOLDER**
+**STOP RIGHT CLICK AND UNCOMPRESS FOLDER** :-1:
 
 ```shell
 unzip archive_name.zip
@@ -182,7 +182,7 @@ unzip archive_name.zip
 
 ## <a id="removefile"></a>remove a file
 
-**STOP RIGHT CLICK AND DELETE A FILE PERMANENTLY**
+**STOP RIGHT CLICK AND DELETE A FILE PERMANENTLY** :-1:
 
 ```shell
 rm my_useless_file
@@ -192,7 +192,7 @@ IMPORTANT: The rm command deletes my_useless_file permanently, which is equivale
 
 ## <a id="removefolder"></a>remove a folder
 
-**STOP RIGHT CLICK AND DELETE A FOLDER PERMANENTLY**
+**STOP RIGHT CLICK AND DELETE A FOLDER PERMANENTLY** :-1:
 
 ```shell
 rm -r my_useless_folder
@@ -200,7 +200,7 @@ rm -r my_useless_folder
 
 ## <a id="listfolder"></a>list folder contents
 
-**STOP OPENING YOUR FINDER OR FILE EXPLORER**
+**STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
 ```shell
 ls -la my_folder
@@ -208,7 +208,7 @@ ls -la my_folder
 
 ## <a id="treeview"></a>tree view a folder and its subfolders
 
-**STOP OPENING YOUR FINDER OR FILE EXPLORER**
+**STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
 ```shell
 tree                                                       # on Linux
@@ -217,7 +217,7 @@ find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'     # on MacOS
 
 ## <a id="findfile"></a>find a stale file
 
-**STOP USING YOUR FILE EXPLORER TO FIND A FILE**
+**STOP USING YOUR FILE EXPLORER TO FIND A FILE** :-1:
 
 Find all files modified more than 5 days ago
 
@@ -227,7 +227,7 @@ find my_folder -mtime +5
 
 ## <a id="showcal"></a>show a calendar
 
-**STOP LOOKING UP WHAT THIS MONTH LOOKS LIKE BY CALENDAR WIDGETS**
+**STOP LOOKING UP WHAT THIS MONTH LOOKS LIKE BY CALENDAR WIDGETS** :-1:
 
 Display a text calendar
 
@@ -237,7 +237,7 @@ cal
 
 ## <a id="calcdate"></a>find a future date
 
-**STOP USING WEBAPPS TO CALCULATE FUTURE DATES**
+**STOP USING WEBAPPS TO CALCULATE FUTURE DATES** :-1:
 
 What is todays date?
 
@@ -254,7 +254,7 @@ date -j -v+7d                                              # on MacOS
 
 ## <a id="calculator"></a>use a calculator
 
-**STOP USING CALCULATOR WIDGET**
+**STOP USING CALCULATOR WIDGET** :-1:
 
 Want to use a calculator?
 
@@ -264,7 +264,7 @@ bc
 
 ## <a id="killprogram"></a>force quit a program
 
-**STOP FORCE QUITE A PROGRAM USING GUI**
+**STOP FORCE QUITE A PROGRAM USING GUI** :-1:
 
 ```shell
 killall program_name
