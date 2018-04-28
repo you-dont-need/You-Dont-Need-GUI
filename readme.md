@@ -11,7 +11,7 @@ Graphical user interfaces are super friendly to computer users. They were introd
 
 However, they often require more resources, are less powerful and hard to automate via scripting.
 
-As a computer expert, we want to be more efficient and do our jobs better. We know that command words may not be easily discoverable or mnemonic, so we try to list some common tasks that you might tempt to do in GUI.
+As a computer expert, we want to be more efficient and do our jobs better. We know that command words may not be easily discoverable or mnemonic, so we try to list some common tasks that you might be tempted to do in GUI.
 
 ## Quick links
 
@@ -264,7 +264,7 @@ bc
 
 ## force quit a program
 
-**STOP FORCE QUITE A PROGRAM USING GUI** :-1:
+**STOP FORCE QUIT A PROGRAM USING GUI** :-1:
 
 ```shell
 killall program_name
