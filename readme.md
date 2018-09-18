@@ -43,7 +43,6 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 ## copy a file
 
-**STOP DRAG AND DROP A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE** :-1:
 
 Copy `readme.txt` to the `documents` folder
 
@@ -53,7 +52,6 @@ cp readme.txt documents/
 
 ## duplicate a file
 
-**STOP RIGHT CLICK AND DUPLICATE A FILE** :-1:
 
 ```shell
 cp readme.txt readme.bak.txt
@@ -61,7 +59,6 @@ cp readme.txt readme.bak.txt
 
 ## copy a folder
 
-**STOP DRAG AND DROP A FOLDER, OR CMD/CTRL + C, CMD/CTRL + V A FOLDER** :-1:
 
 Copy `myMusic` folder to the `myMedia` folder
 
@@ -73,7 +70,6 @@ cp -a myMusic/ myMedia/myMusic/
 
 ## duplicate a folder
 
-**STOP RIGHT CLICK AND DUPLICATE A FOLDER** :-1:
 
 ```shell
 cp -a myMusic/ myMedia/
@@ -83,7 +79,6 @@ cp -a myMusic myMedia/
 
 ## move a file
 
-**STOP DRAG AND DROP A FILE, OR CTRL + X, CTRL + V A FILE** :-1:
 
 ```shell
 mv readme.txt documents/
@@ -93,7 +88,6 @@ mv readme.txt documents/
 
 ## rename a file
 
-**STOP RIGHT CLICK AND RENAME A FILE** :-1:
 
 ```shell
 mv readme.txt README.md
@@ -101,7 +95,6 @@ mv readme.txt README.md
 
 ## move a folder
 
-**STOP DRAG AND DROP A FOLDER, OR CTRL + X, CTRL + V A FOLDER** :-1:
 
 ```shell
 mv myMedia myMusic/
@@ -111,7 +104,6 @@ mv myMedia/ myMusic/myMedia
 
 ## rename a folder
 
-**STOP RIGHT CLICK AND RENAME A FOLDER** :-1:
 
 ```shell
 mv myMedia/ myMusic/
@@ -119,7 +111,6 @@ mv myMedia/ myMusic/
 
 ## merge folders
 
-**STOP DRAG AND DROP TO MERGE FOLDERS** :-1:
 
 ```shell
 rsync -a /images/ /images2/
@@ -182,7 +173,6 @@ unzip archive_name.zip
 
 ## remove a file
 
-**STOP RIGHT CLICK AND DELETE A FILE PERMANENTLY** :-1:
 
 ```shell
 rm my_useless_file
@@ -192,7 +182,6 @@ IMPORTANT: The rm command deletes my_useless_file permanently, which is equivale
 
 ## remove a folder
 
-**STOP RIGHT CLICK AND DELETE A FOLDER PERMANENTLY** :-1:
 
 ```shell
 rm -r my_useless_folder
