@@ -234,6 +234,11 @@ Display a text calendar
 ```shell
 cal
 ```
+Display selected month and year calendar
+
+```shell
+cal 11 2018
+```
 
 ## find a future date
 
