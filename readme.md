@@ -275,5 +275,13 @@ bc
 killall program_name
 ```
 
+## check server response
+
+**CHECK THE RESPONSE OF A DOMAIN OR IP ADDRESS** :-1:
+```shell
+ping url_or_ip
+
+Example : ping umair.surge.sh
+```
 ---
 _Remember, you can always google or `man` the commands you are not familiar with._
