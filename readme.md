@@ -39,6 +39,8 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [find a future date](#find-a-future-date)
 1. [use a calculator](#use-a-calculator)
 1. [force quit a program](#force-quit-a-program)
+1. [view content of a file](#view-content-of-a-file)
+
 
 
 ## copy a file
@@ -275,5 +277,13 @@ bc
 killall program_name
 ```
 
+## view content of a file
+
+**VIEW THE CONTENT OF ANY FILE** :-1:
+```shell
+cat file_full_path
+
+Example : cat apps/settings.py
+```
 ---
 _Remember, you can always google or `man` the commands you are not familiar with._
