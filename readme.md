@@ -40,7 +40,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [use a calculator](#use-a-calculator)
 1. [force quit a program](#force-quit-a-program)
 1. [view content of a file](#view-content-of-a-file)
-
+1. [search for a text](#search-for-a-text)
 
 
 ## copy a file
@@ -285,5 +285,30 @@ cat file_full_path
 
 Example : cat apps/settings.py
 ```
+
+## search for a text
+
+**SEARCH FOR A PATTERN IN FILES** :-1:
+
+```shell
+grep [options] pattern [files]
+
+Example : grep -ir "Query" file.txt
+
+Options Description
+-c : This prints only a count of the lines that match a pattern
+-h : Display the matched lines, but do not display the filenames.
+-i : Ignores, case for matching
+-l : Displays list of a filenames only.
+-n : Display the matched lines and their line numbers.
+-v : This prints out all the lines that do not matches the pattern
+-e exp : Specifies expression with this option. Can use multiple times.
+-f file : Takes patterns from file, one per line.
+-E : Treats pattern as an extended regular expression (ERE)
+-w : Match whole word
+-o : Print only the matched parts of a matching line, with each such part on a separate output line.
+-r : Search repetitively/iteratively
+```
+
 ---
 _Remember, you can always google or `man` the commands you are not familiar with._
