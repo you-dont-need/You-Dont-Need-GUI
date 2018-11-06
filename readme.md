@@ -39,6 +39,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [find a future date](#find-a-future-date)
 1. [use a calculator](#use-a-calculator)
 1. [force quit a program](#force-quit-a-program)
+1. [check server response](#check-server-response)
 1. [view content of a file](#view-content-of-a-file)
 1. [search for a text](#search-for-a-text)
 
@@ -275,6 +276,15 @@ bc
 
 ```shell
 killall program_name
+```
+
+## check server response
+
+**CHECK THE RESPONSE OF A DOMAIN OR IP ADDRESS** :-1:
+```shell
+ping url_or_ip
+
+Example : ping umair.surge.sh
 ```
 
 ## view content of a file
