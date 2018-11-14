@@ -42,6 +42,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [check server response](#check-server-response)
 1. [view content of a file](#view-content-of-a-file)
 1. [search for a text](#search-for-a-text)
+1. [Quick tips](#quick-tips)
 
 
 ## copy a file
@@ -319,6 +320,10 @@ Options Description
 -o : Print only the matched parts of a matching line, with each such part on a separate output line.
 -r : Search repetitively/iteratively
 ```
+
+## Quick tips
+
+![CLI tips](./cli_tips.jpg)
 
 ---
 _Remember, you can always google or `man` the commands you are not familiar with._
