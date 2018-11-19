@@ -42,6 +42,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [check server response](#check-server-response)
 1. [view content of a file](#view-content-of-a-file)
 1. [search for a text](#search-for-a-text)
+1. [view an image](#view-an-image)
 1. [Quick tips](#quick-tips)
 1. [Hotkeys](#hotkeys)
 
@@ -284,18 +285,14 @@ killall program_name
 
 **CHECK THE RESPONSE OF A DOMAIN OR IP ADDRESS** :-1:
 ```shell
-ping url_or_ip
-
-Example : ping umair.surge.sh
+ping umair.surge.sh
 ```
 
 ## view content of a file
 
 **VIEW THE CONTENT OF ANY FILE** :-1:
 ```shell
-cat file_full_path
-
-Example : cat apps/settings.py
+cat apps/settings.py
 ```
 
 ## search for a text
@@ -303,23 +300,15 @@ Example : cat apps/settings.py
 **SEARCH FOR A PATTERN IN FILES** :-1:
 
 ```shell
-grep [options] pattern [files]
+grep -ir "Query" file.txt
+```
 
-Example : grep -ir "Query" file.txt
+## view an image
 
-Options Description
--c : This prints only a count of the lines that match a pattern
--h : Display the matched lines, but do not display the filenames.
--i : Ignores, case for matching
--l : Displays list of a filenames only.
--n : Display the matched lines and their line numbers.
--v : This prints out all the lines that do not matches the pattern
--e exp : Specifies expression with this option. Can use multiple times.
--f file : Takes patterns from file, one per line.
--E : Treats pattern as an extended regular expression (ERE)
--w : Match whole word
--o : Print only the matched parts of a matching line, with each such part on a separate output line.
--r : Search repetitively/iteratively
+**STOP USING PREVIEW** :-1:
+
+```shell
+imgcat image.png
 ```
 
 ## Quick tips
