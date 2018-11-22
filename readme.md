@@ -49,7 +49,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 ## copy a file
 
-**STOP DRAG AND DROP A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE** :-1:
+**STOP DRAG AND DROPING A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE** :-1:
 
 Copy `readme.txt` to the `documents` folder
 
@@ -59,7 +59,7 @@ cp readme.txt documents/
 
 ## duplicate a file
 
-**STOP RIGHT CLICK AND DUPLICATE A FILE** :-1:
+**STOP RIGHT CLICKING AND DUPLICATE A FILE** :-1:
 
 ```shell
 cp readme.txt readme.bak.txt
@@ -67,7 +67,7 @@ cp readme.txt readme.bak.txt
 
 ## copy a folder
 
-**STOP DRAG AND DROP A FOLDER, OR CMD/CTRL + C, CMD/CTRL + V A FOLDER** :-1:
+**STOP DRAG AND DROPING A FOLDER, OR CMD/CTRL + C, CMD/CTRL + V A FOLDER** :-1:
 
 Copy `myMusic` folder to the `myMedia` folder
 
@@ -79,7 +79,7 @@ cp -a myMusic/ myMedia/myMusic/
 
 ## duplicate a folder
 
-**STOP RIGHT CLICK AND DUPLICATE A FOLDER** :-1:
+**STOP RIGHT CLICKING AND DUPLICATE A FOLDER** :-1:
 
 ```shell
 cp -a myMusic/ myMedia/
@@ -89,7 +89,7 @@ cp -a myMusic myMedia/
 
 ## move a file
 
-**STOP DRAG AND DROP A FILE, OR CTRL + X, CTRL + V A FILE** :-1:
+**STOP DRAG AND DROPING A FILE, OR CMD/CTRL + X, CMD/CTRL + V A FILE** :-1:
 
 ```shell
 mv readme.txt documents/
@@ -99,7 +99,7 @@ mv readme.txt documents/
 
 ## rename a file
 
-**STOP RIGHT CLICK AND RENAME A FILE** :-1:
+**STOP RIGHT CLICKING AND RENAME A FILE** :-1:
 
 ```shell
 mv readme.txt README.md
@@ -107,7 +107,7 @@ mv readme.txt README.md
 
 ## move a folder
 
-**STOP DRAG AND DROP A FOLDER, OR CTRL + X, CTRL + V A FOLDER** :-1:
+**STOP DRAG AND DROPING A FOLDER, OR CMD/CTRL + X, CMD/CTRL + V A FOLDER** :-1:
 
 ```shell
 mv myMedia myMusic/
@@ -117,7 +117,7 @@ mv myMedia/ myMusic/myMedia
 
 ## rename a folder
 
-**STOP RIGHT CLICK AND RENAME A FOLDER** :-1:
+**STOP RIGHT CLICKING AND RENAME A FOLDER** :-1:
 
 ```shell
 mv myMedia/ myMusic/
@@ -125,7 +125,7 @@ mv myMedia/ myMusic/
 
 ## merge folders
 
-**STOP DRAG AND DROP TO MERGE FOLDERS** :-1:
+**STOP DRAG AND DROPING TO MERGE FOLDERS** :-1:
 
 ```shell
 rsync -a /images/ /images2/
@@ -133,7 +133,7 @@ rsync -a /images/ /images2/
 
 ## create a new file
 
-**STOP RIGHT CLICK AND CREATE A NEW FILE** :-1:
+**STOP RIGHT CLICKING AND CREATE A NEW FILE** :-1:
 
 ```shell
 touch 'new file'
@@ -143,7 +143,7 @@ touch 'new file'
 
 ## create a new folder
 
-**STOP RIGHT CLICK AND CREATE A NEW FOLDER** :-1:
+**STOP RIGHT CLICKING AND CREATE A NEW FOLDER** :-1:
 
 ```shell
 mkdir 'untitled folder'
@@ -153,7 +153,7 @@ mkdir -p 'path/may/not/exist/untitled folder'
 
 ## show file/folder size
 
-**STOP RIGHT CLICK AND SHOW FILE/FOLDER INFO** :-1:
+**STOP RIGHT CLICKING AND SHOW FILE/FOLDER INFO** :-1:
 
 ```shell
 stat -x readme.md
@@ -163,7 +163,7 @@ du -sh readme.md
 
 ## open a file with the default program
 
-**STOP DOUBLE CLICKING A FILE** :-1:
+**STOP DOUBLE CLICKING ON A FILE** :-1:
 
 ```shell
 xdg-open file   # on Linux
@@ -172,7 +172,7 @@ open file       # on MacOS
 
 ## zip a folder
 
-**STOP RIGHT CLICK AND COMPRESS FOLDER** :-1:
+**STOP RIGHT CLICKING AND COMPRESS FOLDER** :-1:
 
 ```shell
 zip -r archive_name.zip folder_to_compress
@@ -180,7 +180,7 @@ zip -r archive_name.zip folder_to_compress
 
 ## unzip a folder
 
-**STOP RIGHT CLICK AND UNCOMPRESS FOLDER** :-1:
+**STOP RIGHT CLICKING AND UNCOMPRESS FOLDER** :-1:
 
 ```shell
 unzip archive_name.zip
@@ -188,7 +188,7 @@ unzip archive_name.zip
 
 ## remove a file
 
-**STOP RIGHT CLICK AND DELETE A FILE PERMANENTLY** :-1:
+**STOP RIGHT CLICKING AND DELETE A FILE PERMANENTLY** :-1:
 
 ```shell
 rm my_useless_file
@@ -198,7 +198,7 @@ IMPORTANT: The rm command deletes my_useless_file permanently, which is equivale
 
 ## remove a folder
 
-**STOP RIGHT CLICK AND DELETE A FOLDER PERMANENTLY** :-1:
+**STOP RIGHT CLICKING AND DELETE A FOLDER PERMANENTLY** :-1:
 
 ```shell
 rm -r my_useless_folder
@@ -275,7 +275,7 @@ bc
 
 ## force quit a program
 
-**STOP FORCE QUIT A PROGRAM USING GUI** :-1:
+**STOP FORCE QUIT A PROGRAM USING CTRL + ALT + DELETE** :-1:
 
 ```shell
 killall program_name
@@ -283,21 +283,23 @@ killall program_name
 
 ## check server response
 
-**CHECK THE RESPONSE OF A DOMAIN OR IP ADDRESS** :-1:
+**STOP OPENING A BROWSER** :-1:
+
 ```shell
 ping umair.surge.sh
 ```
 
 ## view content of a file
 
-**VIEW THE CONTENT OF ANY FILE** :-1:
+**STOP DOUBLE CLICKING A FILE** :-1:
+
 ```shell
 cat apps/settings.py
 ```
 
 ## search for a text
 
-**SEARCH FOR A PATTERN IN FILES** :-1:
+**STOP CMD/CTRL + F IN A FOLDER** :-1:
 
 ```shell
 grep -ir "Query" file.txt
