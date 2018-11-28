@@ -275,7 +275,7 @@ bc
 
 ## force quit a program
 
-**STOP FORCE QUITTING A PROGRAM USING CTRL + ALT + DELETE** :-1:
+**STOP CTRL + ALT + DELETE and choose the program to kill** :-1:
 
 ```shell
 killall program_name
