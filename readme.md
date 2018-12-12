@@ -43,6 +43,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [view content of a file](#view-content-of-a-file)
 1. [search for a text](#search-for-a-text)
 1. [view an image](#view-an-image)
+1. [show disk size](#show-disk-size)
 1. [Quick tips](#quick-tips)
 1. [Hotkeys](#hotkeys)
 
@@ -311,6 +312,14 @@ grep -ir "Query" file.txt
 
 ```shell
 imgcat image.png
+```
+
+## show disk size
+
+**STOP RIGHT CLICKING DISK ICON OR OPENING DISK UTILITY** :-1:
+
+```shell
+df -h
 ```
 
 ## Quick tips
