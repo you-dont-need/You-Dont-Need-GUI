@@ -44,6 +44,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [search for a text](#search-for-a-text)
 1. [view an image](#view-an-image)
 1. [show disk size](#show-disk-size)
+1. [check performance of your computer](#check-performance-of-your-computer)
 1. [Quick tips](#quick-tips)
 1. [Hotkeys](#hotkeys)
 
@@ -320,6 +321,14 @@ imgcat image.png
 
 ```shell
 df -h
+```
+
+## check performance of your computer
+
+**STOP OPENING YOUR ACTIVITY MONITOR OR TASK MANAGER** :-1:
+
+```shell
+top
 ```
 
 ## Quick tips
