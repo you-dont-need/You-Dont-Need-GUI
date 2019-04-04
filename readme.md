@@ -15,38 +15,40 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 ## Quick links
 
-1. [copy a file](#copy-a-file)
-1. [duplicate a file](#duplicate-a-file)
-1. [copy a folder](#copy-a-folder)
-1. [duplicate a folder](#duplicate-a-folder)
-1. [move a file](#move-a-file)
-1. [rename a file](#rename-a-file)
-1. [move a folder](#move-a-folder)
-1. [rename a folder](#rename-a-folder)
-1. [merge folders](#merge-folders)
-1. [create a new file](#create-a-new-file)
-1. [create a new folder](#create-a-new-folder)
-1. [show file/folder size](#show-filefolder-size)
-1. [open a file with the default program](#open-a-file-with-the-default-program)
-1. [zip a folder](#zip-a-folder)
-1. [unzip a folder](#unzip-a-folder)
-1. [remove a file](#remove-a-file)
-1. [remove a folder](#remove-a-folder)
-1. [list folder contents](#list-folder-contents)
-1. [tree view a folder and its subfolders](#tree-view-a-folder-and-its-subfolders)
-1. [find a stale file](#find-a-stale-file)
-1. [show a calendar](#show-a-calendar)
-1. [find a future date](#find-a-future-date)
-1. [use a calculator](#use-a-calculator)
-1. [force quit a program](#force-quit-a-program)
-1. [check server response](#check-server-response)
-1. [view content of a file](#view-content-of-a-file)
-1. [search for a text](#search-for-a-text)
-1. [view an image](#view-an-image)
-1. [show disk size](#show-disk-size)
-1. [check performance of your computer](#check-performance-of-your-computer)
-1. [Quick tips](#quick-tips)
-1. [Hotkeys](#hotkeys)
+- [You Don't Need GUI](#you-dont-need-gui)
+  - [Quick links](#quick-links)
+  - [copy a file](#copy-a-file)
+  - [duplicate a file](#duplicate-a-file)
+  - [copy a folder](#copy-a-folder)
+  - [duplicate a folder](#duplicate-a-folder)
+  - [move a file](#move-a-file)
+  - [rename a file](#rename-a-file)
+  - [move a folder](#move-a-folder)
+  - [rename a folder](#rename-a-folder)
+  - [merge folders](#merge-folders)
+  - [create a new file](#create-a-new-file)
+  - [create a new folder](#create-a-new-folder)
+  - [show file/folder size](#show-filefolder-size)
+  - [open a file with the default program](#open-a-file-with-the-default-program)
+  - [zip a folder](#zip-a-folder)
+  - [unzip a folder](#unzip-a-folder)
+  - [remove a file](#remove-a-file)
+  - [remove a folder](#remove-a-folder)
+  - [list folder contents](#list-folder-contents)
+  - [tree view a folder and its subfolders](#tree-view-a-folder-and-its-subfolders)
+  - [find a stale file](#find-a-stale-file)
+  - [show a calendar](#show-a-calendar)
+  - [find a future date](#find-a-future-date)
+  - [use a calculator](#use-a-calculator)
+  - [force quit a program](#force-quit-a-program)
+  - [check server response](#check-server-response)
+  - [view content of a file](#view-content-of-a-file)
+  - [search for a text](#search-for-a-text)
+  - [view an image](#view-an-image)
+  - [show disk size](#show-disk-size)
+  - [check performance of your computer](#check-performance-of-your-computer)
+  - [Quick tips](#quick-tips)
+  - [Hotkeys](#hotkeys)
 
 
 ## copy a file
@@ -138,9 +140,9 @@ rsync -a /images/ /images2/
 **STOP RIGHT CLICKING AND CREATE A NEW FILE** :-1:
 
 ```shell
-touch 'new file'
+touch 'new file' # updates the file's access and modification timestamp if it already exists
 # or
-> 'new file'
+> 'new file' # erase the content if it already exists
 ```
 
 ## create a new folder
