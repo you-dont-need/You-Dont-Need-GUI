@@ -15,7 +15,6 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 ## Quick links
 
-1. [Quick links](#quick-links)
 1. [copy a file](#copy-a-file)
 1. [duplicate a file](#duplicate-a-file)
 1. [copy a folder](#copy-a-folder)
