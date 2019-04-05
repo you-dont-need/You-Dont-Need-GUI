@@ -138,9 +138,9 @@ rsync -a /images/ /images2/
 **STOP RIGHT CLICKING AND CREATE A NEW FILE** :-1:
 
 ```shell
-touch 'new file'
+touch 'new file' # updates the file's access and modification timestamp if it already exists
 # or
-> 'new file'
+> 'new file' # erase the content if it already exists
 ```
 
 ## create a new folder
