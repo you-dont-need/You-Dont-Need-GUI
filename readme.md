@@ -269,8 +269,6 @@ date -j -v+7d                                              # on MacOS
 
 **STOP USING CALCULATOR WIDGET** :-1:
 
-Want to use a calculator?
-
 ```shell
 bc
 ```
