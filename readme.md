@@ -305,6 +305,8 @@ cat apps/settings.py
 grep -ir "Query" file.txt
 ```
 
+![grep](./grep.jpg)
+
 ## view an image
 
 **STOP USING PREVIEW** :-1:
