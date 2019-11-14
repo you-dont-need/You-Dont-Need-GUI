@@ -1,5 +1,7 @@
 # You Don't Need GUI
 
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/you-dont-need/GUI)
+
 <details>
 It's for noobs :)
 </details>
