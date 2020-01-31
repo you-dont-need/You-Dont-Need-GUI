@@ -29,6 +29,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [create a new file](#create-a-new-file)
 1. [create a new folder](#create-a-new-folder)
 1. [show file/folder size](#show-filefolder-size)
+1. [show file/folder info](#show-filefolder-info)
 1. [open a file with the default program](#open-a-file-with-the-default-program)
 1. [zip a folder](#zip-a-folder)
 1. [unzip a folder](#unzip-a-folder)
@@ -160,9 +161,15 @@ mkdir -p 'path/may/not/exist/untitled folder'
 **STOP RIGHT CLICKING AND SHOW FILE/FOLDER INFO** :-1:
 
 ```shell
+du -sh node_modules/
+```
+
+## show file/folder info
+
+**STOP RIGHT CLICKING AND SHOW FILE/FOLDER INFO** :-1:
+
+```shell
 stat -x readme.md
-# or
-du -sh readme.md
 ```
 
 ## open a file with the default program
