@@ -33,6 +33,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [open a file with the default program](#open-a-file-with-the-default-program)
 1. [zip a folder](#zip-a-folder)
 1. [unzip a folder](#unzip-a-folder)
+1. [peek files in a zip file](#peek-files-in-a-zip-file)
 1. [remove a file](#remove-a-file)
 1. [remove a folder](#remove-a-folder)
 1. [list folder contents](#list-folder-contents)
@@ -195,6 +196,14 @@ zip -r archive_name.zip folder_to_compress
 
 ```shell
 unzip archive_name.zip
+```
+
+## peek files in a zip file
+
+**STOP USING WinRAR** :-1:
+
+```shell
+zipinfo archive_name.zip
 ```
 
 ## remove a file
