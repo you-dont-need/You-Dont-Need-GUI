@@ -204,6 +204,8 @@ unzip archive_name.zip
 
 ```shell
 zipinfo archive_name.zip
+# or
+unzip -l archive_name.zip
 ```
 
 ## remove a file
