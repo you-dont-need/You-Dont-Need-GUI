@@ -51,7 +51,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [check performance of your computer](#check-performance-of-your-computer)
 1. [Quick tips](#quick-tips)
 1. [Hotkeys](#hotkeys)
-1. [I can't remember these cryptic commands]()
+1. [I can't remember these cryptic commands](#i-cant-remember-these-cryptic-commands)
 
 
 ## copy a file
