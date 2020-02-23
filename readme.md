@@ -248,7 +248,7 @@ ls -la my_folder    # -l: show in list format. -a: show all files, including hid
 ```shell
 tree                                                        # on Linux
 find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'      # on MacOS
-# Note: install homebrew (brew.sh) to be able to use (some) Linux utilities such as tree.
+# Note: install homebrew (https://brew.sh) to be able to use (some) Linux utilities such as tree.
 ```
 
 ## find a stale file
@@ -323,7 +323,7 @@ ping umair.surge.sh
 
 ```shell
 cat apps/settings.py
-# or, if the file is too big, you can take its output and push it through a 'pager' which shows you one page at a time.
+# if the file is too big to fit on one page, you can send it to a 'pager' (less) which shows you one page at a time.
 cat apps/settings.py | less
 ```
 
