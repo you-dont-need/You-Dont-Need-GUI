@@ -332,7 +332,7 @@ cat apps/settings.py | less
 **STOP CMD/CTRL + F IN A FOLDER** :-1:
 
 ```shell
-grep -ir "Query" file.txt
+grep -i "Query" file.txt
 ```
 
 ![grep](./grep.jpg)
