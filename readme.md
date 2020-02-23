@@ -149,7 +149,7 @@ rsync -a /images/ /images2/	# note: may over-write files with the same name, so 
 ```shell
 touch 'new file'    # updates the file's access and modification timestamp if it already exists
 # or
-> 'new file'	    # note: erases the content if it already exists
+> 'new file'        # note: erases the content if it already exists
 ```
 
 ## create a new folder
