@@ -73,7 +73,9 @@ cp readme.txt readme.bak.txt
 ```
 More advanced:
 ```shell
-cp readme{.bak}.txt
+cp readme{,.bak}.txt
+# Note: learn how the {} works with touch foo{1,2,3}.txt and
+see what happens.
 ```
 
 ## copy a folder
