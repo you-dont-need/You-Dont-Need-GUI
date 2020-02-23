@@ -343,6 +343,7 @@ grep -i "Query" file.txt
 
 ```shell
 imgcat image.png
+# Note: requires iTerm2 terminal.
 ```
 
 ## show disk size
