@@ -241,6 +241,7 @@ rm -r my_useless_folder
 ```shell
 ls my_folder        # Simple
 ls -la my_folder    # -l: show in list format. -a: show all files, including hidden. -la combines those options.
+ls -alrth my_folder # -r: reverse output. -t: sort by time (modified). -h: output human-readable sizes.
 ```
 
 ## tree view a folder and its subfolders
