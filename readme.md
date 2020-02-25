@@ -61,7 +61,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 Copy `readme.txt` to the `documents` folder
 
 ```shell
-cp readme.txt documents/
+$ cp readme.txt documents/
 ```
 
 ## duplicate a file
@@ -69,13 +69,12 @@ cp readme.txt documents/
 **STOP RIGHT CLICKING AND DUPLICATE A FILE** :-1:
 
 ```shell
-cp readme.txt readme.bak.txt
+$ cp readme.txt readme.bak.txt
 ```
 More advanced:
 ```shell
-cp readme{,.bak}.txt
-# Note: learn how the {} works with touch foo{1,2,3}.txt and
-see what happens.
+$ cp readme{,.bak}.txt
+# Note: learn how the {} works with touch foo{1,2,3}.txt and see what happens.
 ```
 
 ## copy a folder
@@ -85,9 +84,9 @@ see what happens.
 Copy `myMusic` folder to the `myMedia` folder
 
 ```shell
-cp -a myMusic myMedia/
+$ cp -a myMusic myMedia/
 # or
-cp -a myMusic/ myMedia/myMusic/
+$ cp -a myMusic/ myMedia/myMusic/
 ```
 
 ## duplicate a folder
@@ -95,9 +94,9 @@ cp -a myMusic/ myMedia/myMusic/
 **STOP RIGHT CLICKING AND DUPLICATE A FOLDER** :-1:
 
 ```shell
-cp -a myMusic/ myMedia/
+$ cp -a myMusic/ myMedia/
 # or if `myMedia` folder doesn't exist
-cp -a myMusic myMedia/
+$ cp -a myMusic myMedia/
 ```
 
 ## move a file
@@ -105,7 +104,7 @@ cp -a myMusic myMedia/
 **STOP DRAG AND DROPING A FILE, OR CMD/CTRL + X, CMD/CTRL + V A FILE** :-1:
 
 ```shell
-mv readme.txt documents/
+$ mv readme.txt documents/
 ```
 
 **Always** use a trailing slash when moving files, [for this reason](http://unix.stackexchange.com/a/50533).
@@ -115,7 +114,7 @@ mv readme.txt documents/
 **STOP RIGHT CLICKING AND RENAME A FILE** :-1:
 
 ```shell
-mv readme.txt README.md
+$ mv readme.txt README.md
 ```
 
 ## move a folder
@@ -123,9 +122,9 @@ mv readme.txt README.md
 **STOP DRAG AND DROPING A FOLDER, OR CMD/CTRL + X, CMD/CTRL + V A FOLDER** :-1:
 
 ```shell
-mv myMedia myMusic/
+$ mv myMedia myMusic/
 # or
-mv myMedia/ myMusic/myMedia
+$ mv myMedia/ myMusic/myMedia
 ```
 
 ## rename a folder
@@ -133,7 +132,7 @@ mv myMedia/ myMusic/myMedia
 **STOP RIGHT CLICKING AND RENAME A FOLDER** :-1:
 
 ```shell
-mv myMedia/ myMusic/
+$ mv myMedia/ myMusic/
 ```
 
 ## merge folders
@@ -141,7 +140,7 @@ mv myMedia/ myMusic/
 **STOP DRAG AND DROPING TO MERGE FOLDERS** :-1:
 
 ```shell
-rsync -a /images/ /images2/	# note: may over-write files with the same name, so be careful!
+$ rsync -a /images/ /images2/	# note: may over-write files with the same name, so be careful!
 ```
 
 ## create a new file
@@ -149,9 +148,9 @@ rsync -a /images/ /images2/	# note: may over-write files with the same name, so 
 **STOP RIGHT CLICKING AND CREATE A NEW FILE** :-1:
 
 ```shell
-touch 'new file'    # updates the file's access and modification timestamp if it already exists
+$ touch 'new file'    # updates the file's access and modification timestamp if it already exists
 # or
-> 'new file'        # note: erases the content if it already exists
+$ > 'new file'        # note: erases the content if it already exists
 ```
 
 ## create a new folder
@@ -159,9 +158,9 @@ touch 'new file'    # updates the file's access and modification timestamp if it
 **STOP RIGHT CLICKING AND CREATE A NEW FOLDER** :-1:
 
 ```shell
-mkdir 'untitled folder'
+$ mkdir 'untitled folder'
 # or
-mkdir -p 'path/may/not/exist/untitled\ folder'
+$ mkdir -p 'path/may/not/exist/untitled\ folder'
 ```
 
 ## show file/folder size
@@ -169,7 +168,7 @@ mkdir -p 'path/may/not/exist/untitled\ folder'
 **STOP RIGHT CLICKING AND SHOW FILE/FOLDER INFO** :-1:
 
 ```shell
-du -sh node_modules/
+$ du -sh node_modules/
 ```
 
 ## show file/folder info
@@ -177,8 +176,8 @@ du -sh node_modules/
 **STOP RIGHT CLICKING AND SHOW FILE/FOLDER INFO** :-1:
 
 ```shell
-stat -x readme.md   # on macOS
-stat readme.md      # on Linux
+$ stat -x readme.md   # on macOS
+$ stat readme.md      # on Linux
 ```
 
 ## open a file with the default program
@@ -186,8 +185,8 @@ stat readme.md      # on Linux
 **STOP DOUBLE CLICKING ON A FILE** :-1:
 
 ```shell
-xdg-open file   # on Linux
-open file       # on MacOS
+$ xdg-open file   # on Linux
+$ open file       # on MacOS
 ```
 
 ## zip a folder
@@ -195,7 +194,7 @@ open file       # on MacOS
 **STOP RIGHT CLICKING AND COMPRESS FOLDER** :-1:
 
 ```shell
-zip -r archive_name.zip folder_to_compress
+$ zip -r archive_name.zip folder_to_compress
 ```
 
 ## unzip a folder
@@ -203,7 +202,7 @@ zip -r archive_name.zip folder_to_compress
 **STOP RIGHT CLICKING AND UNCOMPRESS FOLDER** :-1:
 
 ```shell
-unzip archive_name.zip
+$ unzip archive_name.zip
 ```
 
 ## peek files in a zip file
@@ -211,9 +210,9 @@ unzip archive_name.zip
 **STOP USING WinRAR** :-1:
 
 ```shell
-zipinfo archive_name.zip
+$ zipinfo archive_name.zip
 # or
-unzip -l archive_name.zip
+$ unzip -l archive_name.zip
 ```
 
 ## remove a file
@@ -221,7 +220,7 @@ unzip -l archive_name.zip
 **STOP RIGHT CLICKING AND DELETE A FILE PERMANENTLY** :-1:
 
 ```shell
-rm my_useless_file
+$ rm my_useless_file
 ```
 
 IMPORTANT: The rm command deletes my_useless_file permanently, which is equivalent to move my_useless_file to Recycle Bin and hit Empty Recycle Bin.
@@ -231,7 +230,7 @@ IMPORTANT: The rm command deletes my_useless_file permanently, which is equivale
 **STOP RIGHT CLICKING AND DELETE A FOLDER PERMANENTLY** :-1:
 
 ```shell
-rm -r my_useless_folder
+$ rm -r my_useless_folder
 ```
 
 ## list folder contents
@@ -239,9 +238,9 @@ rm -r my_useless_folder
 **STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
 ```shell
-ls my_folder        # Simple
-ls -la my_folder    # -l: show in list format. -a: show all files, including hidden. -la combines those options.
-ls -alrth my_folder # -r: reverse output. -t: sort by time (modified). -h: output human-readable sizes.
+$ ls my_folder        # Simple
+$ ls -la my_folder    # -l: show in list format. -a: show all files, including hidden. -la combines those options.
+$ ls -alrth my_folder # -r: reverse output. -t: sort by time (modified). -h: output human-readable sizes.
 ```
 
 ## tree view a folder and its subfolders
@@ -249,8 +248,8 @@ ls -alrth my_folder # -r: reverse output. -t: sort by time (modified). -h: outpu
 **STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
 ```shell
-tree                                                        # on Linux
-find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'      # on MacOS
+$ tree                                                        # on Linux
+$ find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'      # on MacOS
 # Note: install homebrew (https://brew.sh) to be able to use (some) Linux utilities such as tree.
 ```
 
@@ -261,7 +260,7 @@ find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'      # on MacOS
 Find all files modified more than 5 days ago
 
 ```shell
-find my_folder -mtime +5
+$ find my_folder -mtime +5
 ```
 
 ## show a calendar
@@ -271,12 +270,12 @@ find my_folder -mtime +5
 Display a text calendar
 
 ```shell
-cal
+$ cal
 ```
 Display selected month and year calendar
 
 ```shell
-cal 11 2018
+$ cal 11 2018
 ```
 
 ## find a future date
@@ -286,14 +285,14 @@ cal 11 2018
 What is todays date?
 
 ```shell
-date +%m/%d/%Y
+$ date +%m/%d/%Y
 ```
 
 What about a week from now?
 
 ```shell
-date -d "+7 days"                                           # on Linux
-date -j -v+7d                                               # on MacOS
+$ date -d "+7 days"                                           # on Linux
+$ date -j -v+7d                                               # on MacOS
 ```
 
 ## use a calculator
@@ -301,7 +300,7 @@ date -j -v+7d                                               # on MacOS
 **STOP USING CALCULATOR WIDGET** :-1:
 
 ```shell
-bc
+$ bc
 ```
 
 ## force quit a program
@@ -309,7 +308,7 @@ bc
 **STOP CTRL + ALT + DELETE and choose the program to kill** :-1:
 
 ```shell
-killall program_name
+$ killall program_name
 ```
 
 ## check server response
@@ -317,7 +316,7 @@ killall program_name
 **STOP OPENING A BROWSER** :-1:
 
 ```shell
-ping umair.surge.sh
+$ ping umair.surge.sh
 ```
 
 ## view content of a file
@@ -325,9 +324,9 @@ ping umair.surge.sh
 **STOP DOUBLE CLICKING A FILE** :-1:
 
 ```shell
-cat apps/settings.py
+$ cat apps/settings.py
 # if the file is too big to fit on one page, you can send it to a 'pager' (less) which shows you one page at a time.
-cat apps/settings.py | less
+$ cat apps/settings.py | less
 ```
 
 ## search for a text
@@ -335,7 +334,7 @@ cat apps/settings.py | less
 **STOP CMD/CTRL + F IN A FOLDER** :-1:
 
 ```shell
-grep -i "Query" file.txt
+$ grep -i "Query" file.txt
 ```
 
 ![grep](./grep.jpg)
@@ -345,7 +344,7 @@ grep -i "Query" file.txt
 **STOP USING PREVIEW** :-1:
 
 ```shell
-imgcat image.png
+$ imgcat image.png
 # Note: requires iTerm2 terminal.
 ```
 
@@ -354,7 +353,7 @@ imgcat image.png
 **STOP RIGHT CLICKING DISK ICON OR OPENING DISK UTILITY** :-1:
 
 ```shell
-df -h
+$ df -h
 ```
 
 ## check performance of your computer
@@ -362,7 +361,7 @@ df -h
 **STOP OPENING YOUR ACTIVITY MONITOR OR TASK MANAGER** :-1:
 
 ```shell
-top
+$ top
 ```
 
 ## Quick tips
