@@ -71,6 +71,12 @@ cp readme.txt documents/
 ```shell
 cp readme.txt readme.bak.txt
 ```
+More advanced:
+```shell
+cp readme{,.bak}.txt
+# Note: learn how the {} works with touch foo{1,2,3}.txt and
+see what happens.
+```
 
 ## copy a folder
 
@@ -135,7 +141,7 @@ mv myMedia/ myMusic/
 **STOP DRAG AND DROPING TO MERGE FOLDERS** :-1:
 
 ```shell
-rsync -a /images/ /images2/
+rsync -a /images/ /images2/	# note: may over-write files with the same name, so be careful!
 ```
 
 ## create a new file
@@ -143,9 +149,9 @@ rsync -a /images/ /images2/
 **STOP RIGHT CLICKING AND CREATE A NEW FILE** :-1:
 
 ```shell
-touch 'new file' # updates the file's access and modification timestamp if it already exists
+touch 'new file'    # updates the file's access and modification timestamp if it already exists
 # or
-> 'new file' # erase the content if it already exists
+> 'new file'        # note: erases the content if it already exists
 ```
 
 ## create a new folder
@@ -155,7 +161,7 @@ touch 'new file' # updates the file's access and modification timestamp if it al
 ```shell
 mkdir 'untitled folder'
 # or
-mkdir -p 'path/may/not/exist/untitled folder'
+mkdir -p 'path/may/not/exist/untitled\ folder'
 ```
 
 ## show file/folder size
@@ -171,7 +177,8 @@ du -sh node_modules/
 **STOP RIGHT CLICKING AND SHOW FILE/FOLDER INFO** :-1:
 
 ```shell
-stat -x readme.md
+stat -x readme.md   # on macOS
+stat readme.md      # on Linux
 ```
 
 ## open a file with the default program
@@ -232,7 +239,9 @@ rm -r my_useless_folder
 **STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
 ```shell
-ls -la my_folder
+ls my_folder        # Simple
+ls -la my_folder    # -l: show in list format. -a: show all files, including hidden. -la combines those options.
+ls -alrth my_folder # -r: reverse output. -t: sort by time (modified). -h: output human-readable sizes.
 ```
 
 ## tree view a folder and its subfolders
@@ -240,8 +249,9 @@ ls -la my_folder
 **STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
 ```shell
-tree                                                       # on Linux
-find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'     # on MacOS
+tree                                                        # on Linux
+find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'      # on MacOS
+# Note: install homebrew (https://brew.sh) to be able to use (some) Linux utilities such as tree.
 ```
 
 ## find a stale file
@@ -282,8 +292,8 @@ date +%m/%d/%Y
 What about a week from now?
 
 ```shell
-date -d "+7 days"                                          # on Linux
-date -j -v+7d                                              # on MacOS
+date -d "+7 days"                                           # on Linux
+date -j -v+7d                                               # on MacOS
 ```
 
 ## use a calculator
@@ -316,6 +326,8 @@ ping umair.surge.sh
 
 ```shell
 cat apps/settings.py
+# if the file is too big to fit on one page, you can send it to a 'pager' (less) which shows you one page at a time.
+cat apps/settings.py | less
 ```
 
 ## search for a text
@@ -323,7 +335,7 @@ cat apps/settings.py
 **STOP CMD/CTRL + F IN A FOLDER** :-1:
 
 ```shell
-grep -ir "Query" file.txt
+grep -i "Query" file.txt
 ```
 
 ![grep](./grep.jpg)
@@ -334,6 +346,7 @@ grep -ir "Query" file.txt
 
 ```shell
 imgcat image.png
+# Note: requires iTerm2 terminal.
 ```
 
 ## show disk size
