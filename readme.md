@@ -25,7 +25,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [rename a file](#rename-a-file)
 1. [move a directory](#move-a-directory)
 1. [rename a directory](#rename-a-directory)
-1. [merge directorys](#merge-directorys)
+1. [merge directories](#merge-directories)
 1. [create a new file](#create-a-new-file)
 1. [create a new directory](#create-a-new-directory)
 1. [show file/directory size](#show-filedirectory-size)
@@ -37,7 +37,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [remove a file](#remove-a-file)
 1. [remove a directory](#remove-a-directory)
 1. [list directory contents](#list-directory-contents)
-1. [tree view a directory and its subdirectorys](#tree-view-a-directory-and-its-subdirectorys)
+1. [tree view a directory and its subdirectories](#tree-view-a-directory-and-its-subdirectories)
 1. [find a stale file](#find-a-stale-file)
 1. [show a calendar](#show-a-calendar)
 1. [find a future date](#find-a-future-date)
@@ -80,7 +80,7 @@ see what happens.
 
 ## copy a directory
 
-**STOP DRAG AND DROPING A directory, OR CMD/CTRL + C, CMD/CTRL + V A directory** :-1:
+**STOP DRAG AND DROPING A DIRECTORY, OR CMD/CTRL + C, CMD/CTRL + V A DIRECTORY** :-1:
 
 Copy `myMusic` directory to the `myMedia` directory
 
@@ -92,7 +92,7 @@ cp -a myMusic/ myMedia/myMusic/
 
 ## duplicate a directory
 
-**STOP RIGHT CLICKING AND DUPLICATE A directory** :-1:
+**STOP RIGHT CLICKING AND DUPLICATE A DIRECTORY** :-1:
 
 ```shell
 cp -a myMusic/ myMedia/
@@ -120,7 +120,7 @@ mv readme.txt README.md
 
 ## move a directory
 
-**STOP DRAG AND DROPING A directory, OR CMD/CTRL + X, CMD/CTRL + V A directory** :-1:
+**STOP DRAG AND DROPING A DIRECTORY, OR CMD/CTRL + X, CMD/CTRL + V A DIRECTORY** :-1:
 
 ```shell
 mv myMedia myMusic/
@@ -130,15 +130,15 @@ mv myMedia/ myMusic/myMedia
 
 ## rename a directory
 
-**STOP RIGHT CLICKING AND RENAME A directory** :-1:
+**STOP RIGHT CLICKING AND RENAME A DIRECTORY** :-1:
 
 ```shell
 mv myMedia/ myMusic/
 ```
 
-## merge directorys
+## merge directories
 
-**STOP DRAG AND DROPING TO MERGE directoryS** :-1:
+**STOP DRAG AND DROPING TO MERGE DIRECTORIES** :-1:
 
 ```shell
 rsync -a /images/ /images2/	# note: may over-write files with the same name, so be careful!
@@ -156,7 +156,7 @@ touch 'new file'    # updates the file's access and modification timestamp if it
 
 ## create a new directory
 
-**STOP RIGHT CLICKING AND CREATE A NEW directory** :-1:
+**STOP RIGHT CLICKING AND CREATE A NEW DIRECTORY** :-1:
 
 ```shell
 mkdir 'untitled directory'
@@ -174,7 +174,7 @@ du -sh node_modules/
 
 ## show file/directory info
 
-**STOP RIGHT CLICKING AND SHOW FILE/directory INFO** :-1:
+**STOP RIGHT CLICKING AND SHOW FILE/DIRECTORY INFO** :-1:
 
 ```shell
 stat -x readme.md   # on macOS
@@ -192,7 +192,7 @@ open file       # on MacOS
 
 ## zip a directory
 
-**STOP RIGHT CLICKING AND COMPRESS directory** :-1:
+**STOP RIGHT CLICKING AND COMPRESS DIRECTORY** :-1:
 
 ```shell
 zip -r archive_name.zip directory_to_compress
@@ -200,7 +200,7 @@ zip -r archive_name.zip directory_to_compress
 
 ## unzip a directory
 
-**STOP RIGHT CLICKING AND UNCOMPRESS directory** :-1:
+**STOP RIGHT CLICKING AND UNCOMPRESS DIRECTORY** :-1:
 
 ```shell
 unzip archive_name.zip
@@ -228,7 +228,7 @@ IMPORTANT: The rm command deletes my_useless_file permanently, which is equivale
 
 ## remove a directory
 
-**STOP RIGHT CLICKING AND DELETE A directory PERMANENTLY** :-1:
+**STOP RIGHT CLICKING AND DELETE A DIRECTORY PERMANENTLY** :-1:
 
 ```shell
 rm -r my_useless_directory
@@ -244,7 +244,7 @@ ls -la my_directory    # -l: show in list format. -a: show all files, including 
 ls -alrth my_directory # -r: reverse output. -t: sort by time (modified). -h: output human-readable sizes.
 ```
 
-## tree view a directory and its subdirectorys
+## tree view a directory and its subdirectories
 
 **STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
@@ -332,7 +332,7 @@ cat apps/settings.py | less
 
 ## search for a text
 
-**STOP CMD/CTRL + F IN A directory** :-1:
+**STOP CMD/CTRL + F IN A DIRECTORY** :-1:
 
 ```shell
 grep -i "Query" file.txt
