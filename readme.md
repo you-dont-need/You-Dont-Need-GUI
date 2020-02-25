@@ -316,7 +316,8 @@ $ killall program_name
 **STOP OPENING A BROWSER** :-1:
 
 ```shell
-$ ping umair.surge.sh
+curl -i umair.surge.sh
+# curl's -i (--include) option includes HTTP response headers in its output.
 ```
 
 ## view content of a file
