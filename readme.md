@@ -19,25 +19,25 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 1. [copy a file](#copy-a-file)
 1. [duplicate a file](#duplicate-a-file)
-1. [copy a folder](#copy-a-folder)
-1. [duplicate a folder](#duplicate-a-folder)
+1. [copy a directory](#copy-a-directory)
+1. [duplicate a directory](#duplicate-a-directory)
 1. [move a file](#move-a-file)
 1. [rename a file](#rename-a-file)
-1. [move a folder](#move-a-folder)
-1. [rename a folder](#rename-a-folder)
-1. [merge folders](#merge-folders)
+1. [move a directory](#move-a-directory)
+1. [rename a directory](#rename-a-directory)
+1. [merge directories](#merge-directories)
 1. [create a new file](#create-a-new-file)
-1. [create a new folder](#create-a-new-folder)
-1. [show file/folder size](#show-filefolder-size)
-1. [show file/folder info](#show-filefolder-info)
+1. [create a new directory](#create-a-new-directory)
+1. [show file/directory size](#show-filedirectory-size)
+1. [show file/directory info](#show-filedirectory-info)
 1. [open a file with the default program](#open-a-file-with-the-default-program)
-1. [zip a folder](#zip-a-folder)
-1. [unzip a folder](#unzip-a-folder)
+1. [zip a directory](#zip-a-directory)
+1. [unzip a directory](#unzip-a-directory)
 1. [peek files in a zip file](#peek-files-in-a-zip-file)
 1. [remove a file](#remove-a-file)
-1. [remove a folder](#remove-a-folder)
-1. [list folder contents](#list-folder-contents)
-1. [tree view a folder and its subfolders](#tree-view-a-folder-and-its-subfolders)
+1. [remove a directory](#remove-a-directory)
+1. [list directory contents](#list-directory-contents)
+1. [tree view a directory and its subdirectories](#tree-view-a-directory-and-its-subdirectories)
 1. [find a stale file](#find-a-stale-file)
 1. [show a calendar](#show-a-calendar)
 1. [find a future date](#find-a-future-date)
@@ -58,7 +58,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 **STOP DRAG AND DROPING A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE** :-1:
 
-Copy `readme.txt` to the `documents` folder
+Copy `readme.txt` to the `documents` directory
 
 ```shell
 $ cp readme.txt documents/
@@ -77,11 +77,11 @@ $ cp readme{,.bak}.txt
 # Note: learn how the {} works with touch foo{1,2,3}.txt and see what happens.
 ```
 
-## copy a folder
+## copy a directory
 
-**STOP DRAG AND DROPING A FOLDER, OR CMD/CTRL + C, CMD/CTRL + V A FOLDER** :-1:
+**STOP DRAG AND DROPING A DIRECTORY, OR CMD/CTRL + C, CMD/CTRL + V A DIRECTORY** :-1:
 
-Copy `myMusic` folder to the `myMedia` folder
+Copy `myMusic` directory to the `myMedia` directory
 
 ```shell
 $ cp -a myMusic myMedia/
@@ -89,9 +89,9 @@ $ cp -a myMusic myMedia/
 $ cp -a myMusic/ myMedia/myMusic/
 ```
 
-## duplicate a folder
+## duplicate a directory
 
-**STOP RIGHT CLICKING AND DUPLICATE A FOLDER** :-1:
+**STOP RIGHT CLICKING AND DUPLICATE A DIRECTORY** :-1:
 
 ```shell
 $ cp -a myMusic/ myMedia/
@@ -117,9 +117,9 @@ $ mv readme.txt documents/
 $ mv readme.txt README.md
 ```
 
-## move a folder
+## move a directory
 
-**STOP DRAG AND DROPING A FOLDER, OR CMD/CTRL + X, CMD/CTRL + V A FOLDER** :-1:
+**STOP DRAG AND DROPING A DIRECTORY, OR CMD/CTRL + X, CMD/CTRL + V A DIRECTORY** :-1:
 
 ```shell
 $ mv myMedia myMusic/
@@ -127,17 +127,17 @@ $ mv myMedia myMusic/
 $ mv myMedia/ myMusic/myMedia
 ```
 
-## rename a folder
+## rename a directory
 
-**STOP RIGHT CLICKING AND RENAME A FOLDER** :-1:
+**STOP RIGHT CLICKING AND RENAME A DIRECTORY** :-1:
 
 ```shell
 $ mv myMedia/ myMusic/
 ```
 
-## merge folders
+## merge directories
 
-**STOP DRAG AND DROPING TO MERGE FOLDERS** :-1:
+**STOP DRAG AND DROPING TO MERGE DIRECTORIES** :-1:
 
 ```shell
 $ rsync -a /images/ /images2/	# note: may over-write files with the same name, so be careful!
@@ -153,9 +153,9 @@ $ touch 'new file'    # updates the file's access and modification timestamp if 
 $ > 'new file'        # note: erases the content if it already exists
 ```
 
-## create a new folder
+## create a new directory
 
-**STOP RIGHT CLICKING AND CREATE A NEW FOLDER** :-1:
+**STOP RIGHT CLICKING AND CREATE A NEW DIRECTORY** :-1:
 
 ```shell
 $ mkdir 'untitled folder'
@@ -163,17 +163,17 @@ $ mkdir 'untitled folder'
 $ mkdir -p 'path/may/not/exist/untitled\ folder'
 ```
 
-## show file/folder size
+## show file/directory size
 
-**STOP RIGHT CLICKING AND SHOW FILE/FOLDER INFO** :-1:
+**STOP RIGHT CLICKING AND SHOW FILE/directory INFO** :-1:
 
 ```shell
 $ du -sh node_modules/
 ```
 
-## show file/folder info
+## show file/directory info
 
-**STOP RIGHT CLICKING AND SHOW FILE/FOLDER INFO** :-1:
+**STOP RIGHT CLICKING AND SHOW FILE/DIRECTORY INFO** :-1:
 
 ```shell
 $ stat -x readme.md   # on macOS
@@ -189,17 +189,17 @@ $ xdg-open file   # on Linux
 $ open file       # on MacOS
 ```
 
-## zip a folder
+## zip a directory
 
-**STOP RIGHT CLICKING AND COMPRESS FOLDER** :-1:
+**STOP RIGHT CLICKING AND COMPRESS DIRECTORY** :-1:
 
 ```shell
 $ zip -r archive_name.zip folder_to_compress
 ```
 
-## unzip a folder
+## unzip a directory
 
-**STOP RIGHT CLICKING AND UNCOMPRESS FOLDER** :-1:
+**STOP RIGHT CLICKING AND UNCOMPRESS DIRECTORY** :-1:
 
 ```shell
 $ unzip archive_name.zip
@@ -225,15 +225,15 @@ $ rm my_useless_file
 
 IMPORTANT: The rm command deletes my_useless_file permanently, which is equivalent to move my_useless_file to Recycle Bin and hit Empty Recycle Bin.
 
-## remove a folder
+## remove a directory
 
-**STOP RIGHT CLICKING AND DELETE A FOLDER PERMANENTLY** :-1:
+**STOP RIGHT CLICKING AND DELETE A DIRECTORY PERMANENTLY** :-1:
 
 ```shell
 $ rm -r my_useless_folder
 ```
 
-## list folder contents
+## list directory contents
 
 **STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
@@ -243,7 +243,7 @@ $ ls -la my_folder    # -l: show in list format. -a: show all files, including h
 $ ls -alrth my_folder # -r: reverse output. -t: sort by time (modified). -h: output human-readable sizes.
 ```
 
-## tree view a folder and its subfolders
+## tree view a directory and its subdirectories
 
 **STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
@@ -332,7 +332,7 @@ $ cat apps/settings.py | less
 
 ## search for a text
 
-**STOP CMD/CTRL + F IN A FOLDER** :-1:
+**STOP CMD/CTRL + F IN A DIRECTORY** :-1:
 
 ```shell
 $ grep -i "Query" file.txt
@@ -387,7 +387,7 @@ Ctrl + T  Swap the last two characters before the cursor
 Esc + T   Swap the last two words before the cursor
 Alt + F   Move cursor forward one word on the current line
 Alt + B   Move cursor backward one word on the current line
-Tab       Auto-complete files and folder names
+Tab       Auto-complete files and directory names
 ```
 
 ## I can't remember these cryptic commands
