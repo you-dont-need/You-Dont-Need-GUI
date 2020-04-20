@@ -251,6 +251,7 @@ $ ls -alrth my_folder # -r: reverse output. -t: sort by time (modified). -h: out
 $ tree                                                        # on Linux
 $ find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'      # on MacOS
 # Note: install homebrew (https://brew.sh) to be able to use (some) Linux utilities such as tree.
+# brew install tree
 ```
 
 ## find a stale file
