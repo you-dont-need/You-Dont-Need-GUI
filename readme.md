@@ -327,8 +327,8 @@ curl -i umair.surge.sh
 
 ```shell
 $ cat apps/settings.py
-# if the file is too big to fit on one page, you can send it to a 'pager' (less) which shows you one page at a time.
-$ cat apps/settings.py | less
+# if the file is too big to fit on one page, you can use a 'pager' (less) which shows you one page at a time.
+$ less apps/settings.py
 ```
 
 ## search for a text
