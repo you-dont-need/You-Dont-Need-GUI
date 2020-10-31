@@ -56,7 +56,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 ## copy a file
 
-**STOP DRAG AND DROPING A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE** :-1:
+**STOP DRAG AND DROPPING A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE** :-1:
 
 Copy `readme.txt` to the `documents` directory
 
@@ -79,7 +79,7 @@ $ cp readme{,.bak}.txt
 
 ## copy a directory
 
-**STOP DRAG AND DROPING A DIRECTORY, OR CMD/CTRL + C, CMD/CTRL + V A DIRECTORY** :-1:
+**STOP DRAG AND DROPPING A DIRECTORY, OR CMD/CTRL + C, CMD/CTRL + V A DIRECTORY** :-1:
 
 Copy `myMusic` directory to the `myMedia` directory
 
@@ -101,7 +101,7 @@ $ cp -a myMusic myMedia/
 
 ## move a file
 
-**STOP DRAG AND DROPING A FILE, OR CMD/CTRL + X, CMD/CTRL + V A FILE** :-1:
+**STOP DRAG AND DROPPING A FILE, OR CMD/CTRL + X, CMD/CTRL + V A FILE** :-1:
 
 ```shell
 $ mv readme.txt documents/
@@ -119,7 +119,7 @@ $ mv readme.txt README.md
 
 ## move a directory
 
-**STOP DRAG AND DROPING A DIRECTORY, OR CMD/CTRL + X, CMD/CTRL + V A DIRECTORY** :-1:
+**STOP DRAG AND DROPPING A DIRECTORY, OR CMD/CTRL + X, CMD/CTRL + V A DIRECTORY** :-1:
 
 ```shell
 $ mv myMedia myMusic/
@@ -137,7 +137,7 @@ $ mv myMedia/ myMusic/
 
 ## merge directories
 
-**STOP DRAG AND DROPING TO MERGE DIRECTORIES** :-1:
+**STOP DRAG AND DROPPING TO MERGE DIRECTORIES** :-1:
 
 ```shell
 $ rsync -a /images/ /images2/	# note: may over-write files with the same name, so be careful!
