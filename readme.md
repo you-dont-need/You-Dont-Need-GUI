@@ -74,7 +74,7 @@ $ cp readme.txt readme.bak.txt
 More advanced:
 ```shell
 $ cp readme{,.bak}.txt
-# Note: learn how the {} works with touch foo{1,2,3}.txt and see what happens.
+# Note: learn how the {} works with touch foo{1,2,3}.txt or foo{1..3}.txt and see what happens.
 ```
 
 ## copy a directory
