@@ -261,7 +261,7 @@ $ find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'      # on MacOS
 Find all files modified more than 5 days ago
 
 ```shell
-$ find my_folder -mtime +5
+$ find my_folder -mtime +5
 ```
 
 ## show a calendar
