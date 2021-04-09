@@ -187,6 +187,7 @@ $ stat readme.md      # on Linux
 ```shell
 $ xdg-open file   # on Linux
 $ open file       # on MacOS
+$ start file      # on Windows
 ```
 
 ## zip a directory
