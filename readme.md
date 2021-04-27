@@ -52,6 +52,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [Quick tips](#quick-tips)
 1. [Hotkeys](#hotkeys)
 1. [I can't remember these cryptic commands](#i-cant-remember-these-cryptic-commands)
+1. [Poweroff or Reboot your computer](#poweroff-or-reboot-your-computer)
 
 
 ## copy a file
@@ -394,3 +395,15 @@ Tab       Auto-complete files and directory names
 ## I can't remember these cryptic commands
 
 You can always google or `man` the commands you are not familiar with. Or, checkout [tldr](https://github.com/tldr-pages/tldr), a collection of simplified and community-driven man pages.
+
+
+## Poweroff or Reboot your computer
+
+You can poweroff or reboot your machine via the command line. This can be useful when you're patching a server that is acessed via SSH and you don't have a GUI.
+
+```shell
+# poweroff
+sudo shutdown -h now
+# reboot
+sudo shutdown -r now
+```
