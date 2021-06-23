@@ -2,6 +2,8 @@
 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/you-dont-need/GUI)
 
+[中文版请看这里](https://github.com/TeddyHuang-00/You-Dont-Need-GUI-CN)
+
 <details>
 It's for noobs :)
 </details>
