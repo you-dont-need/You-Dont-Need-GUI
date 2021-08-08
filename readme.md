@@ -161,7 +161,7 @@ $ > 'new file'        # note: erases the content if it already exists
 ```shell
 $ mkdir 'untitled folder'
 # or
-$ mkdir -p 'path/may/not/exist/untitled\ folder'
+$ mkdir -p 'path/may/not/exist/untitled folder'
 ```
 
 ## show file/directory size
