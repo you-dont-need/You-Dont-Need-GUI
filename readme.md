@@ -311,7 +311,7 @@ $ bc -l
 **STOP CTRL + ALT + DELETE and choose the program to kill** :-1:
 
 ```shell
-$ killall program_name
+$ killall -9 program_name
 ```
 
 ## check server response
