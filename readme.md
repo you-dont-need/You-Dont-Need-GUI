@@ -387,9 +387,15 @@ Ctrl + Z  Puts whatever you are running into a suspended background process. fg 
 Ctrl + W  Delete the word before the cursor
 Ctrl + K  Clear the line after the cursor
 Ctrl + T  Swap the last two characters before the cursor
+Ctrl + F  Move cursor forward one character
+Ctrl + B  Move cursor backward one character
 Esc + T   Swap the last two words before the cursor
+Alt + T   Same as Esc + T
 Alt + F   Move cursor forward one word on the current line
 Alt + B   Move cursor backward one word on the current line
+Esc + F   Same as Alt + F
+Esc + B   Same as Alt + B
+Alt + .   Paste the last word of the most recently command
 Tab       Auto-complete files and directory names
 ```
 
