@@ -303,7 +303,7 @@ $ date -j -v+7d                                               # on MacOS
 **STOP USING CALCULATOR WIDGET** :-1:
 
 ```shell
-$ bc
+$ bc -l
 ```
 
 ## force quit a program
