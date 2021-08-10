@@ -333,20 +333,23 @@ $ cat apps/settings.py
 $ less apps/settings.py
 ```
 
-## search for a text
+## search for a text in a file
 
-**STOP CMD/CTRL + F IN A DIRECTORY** :-1:
+**STOP CMD/CTRL + F IN A FILE** :-1:
 
 ```shell
 $ grep -i "Query" file.txt
 ```
 
-Search all files in current working directory, quickly: (entire disk in less than 15 minutes)`brew install ripgrep`
-
 ![grep](./grep.jpg)
+
+## search in all files in current working directory, quickly: (entire disk in less than 15 minutes)
+
+**STOP CMD/CTRL + F IN A DIRECTORY** :-1:
 
 ```shell
 $ ripgrep -i "Query"
+# brew install ripgrep
 ```
 
 ## view an image
@@ -374,18 +377,12 @@ $ df -h
 $ top
 ```
 
-To install:
-
-```shellt
-$ brew install python3
-$ pip3 install glances
-```
+## know when your computer is under load, and whether it's due to memory or CPU.
 
 ```shell
 $ glances
+# brew install glances
 ```
-
-`glances` will tell you when your computer is under load, and whether it's due to memory or CPU.
 
 ## Quick tips
 
