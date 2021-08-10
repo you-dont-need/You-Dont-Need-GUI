@@ -45,14 +45,16 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [force quit a program](#force-quit-a-program)
 1. [check server response](#check-server-response)
 1. [view content of a file](#view-content-of-a-file)
-1. [search for a text](#search-for-a-text)
+1. [search for a text in a file](#search-for-a-text-in-a-file)
+1. [search in all files in current working directory, quickly: (entire disk in less than 15 minutes)](#search-in-all-files-in-current-working-directory-quickly-entire-disk-in-less-than-15-minutes)
 1. [view an image](#view-an-image)
 1. [show disk size](#show-disk-size)
 1. [check performance of your computer](#check-performance-of-your-computer)
+1. [know whether your computer is under load, and whether it's due to memory or CPU](#know-whether-your-computer-is-under-load-and-whether-its-due-to-memory-or-cpu)
+1. [Poweroff or Reboot your computer](#poweroff-or-reboot-your-computer)
 1. [Quick tips](#quick-tips)
 1. [Hotkeys](#hotkeys)
 1. [I can't remember these cryptic commands](#i-cant-remember-these-cryptic-commands)
-1. [Poweroff or Reboot your computer](#poweroff-or-reboot-your-computer)
 
 
 ## copy a file
@@ -333,20 +335,23 @@ $ cat apps/settings.py
 $ less apps/settings.py
 ```
 
-## search for a text
+## search for a text in a file
 
-**STOP CMD/CTRL + F IN A DIRECTORY** :-1:
+**STOP CMD/CTRL + F IN A FILE** :-1:
 
 ```shell
 $ grep -i "Query" file.txt
 ```
 
-Search all files in current working directory, quickly: (entire disk in less than 15 minutes)`brew install ripgrep`
-
 ![grep](./grep.jpg)
+
+## search in all files in current working directory, quickly: (entire disk in less than 15 minutes)
+
+**STOP CMD/CTRL + F IN A DIRECTORY** :-1:
 
 ```shell
 $ ripgrep -i "Query"
+# brew install ripgrep
 ```
 
 ## view an image
@@ -374,18 +379,23 @@ $ df -h
 $ top
 ```
 
-To install:
-
-```shellt
-$ brew install python3
-$ pip3 install glances
-```
+## know whether your computer is under load, and whether it's due to memory or CPU
 
 ```shell
 $ glances
+# brew install glances
 ```
 
-`glances` will tell you when your computer is under load, and whether it's due to memory or CPU.
+## Poweroff or Reboot your computer
+
+You can poweroff or reboot your machine via the command line. This can be useful when you're patching a server that is acessed via SSH and you don't have a GUI.
+
+```shell
+# poweroff
+sudo shutdown -h now
+# reboot
+sudo shutdown -r now
+```
 
 ## Quick tips
 
@@ -421,15 +431,3 @@ Tab       Auto-complete files and directory names
 ## I can't remember these cryptic commands
 
 You can always google or `man` the commands you are not familiar with. Or, checkout [tldr](https://github.com/tldr-pages/tldr), a collection of simplified and community-driven man pages.
-
-
-## Poweroff or Reboot your computer
-
-You can poweroff or reboot your machine via the command line. This can be useful when you're patching a server that is acessed via SSH and you don't have a GUI.
-
-```shell
-# poweroff
-sudo shutdown -h now
-# reboot
-sudo shutdown -r now
-```
