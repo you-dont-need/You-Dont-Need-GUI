@@ -46,7 +46,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [check server response](#check-server-response)
 1. [view content of a file](#view-content-of-a-file)
 1. [search for a text in a file](#search-for-a-text-in-a-file)
-1. [search in all files in current working directory, quickly: (entire disk in less than 15 minutes)](#search-in-all-files-in-current-working-directory-quickly-entire-disk-in-less-than-15-minutes)
+1. [search in all files in current working directory, quickly (entire disk in less than 15 minutes)](#search-in-all-files-in-current-working-directory-quickly-entire-disk-in-less-than-15-minutes)
 1. [view an image](#view-an-image)
 1. [show disk size](#show-disk-size)
 1. [check performance of your computer](#check-performance-of-your-computer)
@@ -345,7 +345,7 @@ $ grep -i "Query" file.txt
 
 ![grep](./grep.jpg)
 
-## search in all files in current working directory, quickly: (entire disk in less than 15 minutes)
+## search in all files in current working directory, quickly (entire disk in less than 15 minutes)
 
 **STOP CMD/CTRL + F IN A DIRECTORY** :-1:
 
