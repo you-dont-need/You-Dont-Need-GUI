@@ -377,7 +377,7 @@ $ df -h
 $ top
 ```
 
-## know when your computer is under load, and whether it's due to memory or CPU.
+## know whether your computer is under load, and whether it's due to memory or CPU.
 
 ```shell
 $ glances
