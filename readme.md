@@ -7,15 +7,16 @@
 <details>
 It's for noobs :)
 </details>
-<br />
+<br>
 
-Graphical user interfaces are super friendly to computer users. They were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs).
+Graphical user interfaces (GUIs) are super friendly to computer users, this is why they were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs).
 
-![Xerox Star 8010 workstations](./Xerox_Star_8010_workstations.jpg)
+<div align="center">
+<img alt="Xerox Star 8010 workstations" src="./Xerox_Star_8010_workstations.jpg">
+</div>
 
-However, they often require more resources, are less powerful and hard to automate via scripting.
 
-As a computer expert, we want to be more efficient and do our jobs better. We know that command words may not be easily discoverable or mnemonic, so we try to list some common tasks that you might be tempted to do in GUI.
+However, they often require more resources, are less efficient and hard to automate via scripting. As computer experts, we want to be more efficient and do our jobs better, and we want you to be more efficient too. We know that commands may not be easily rememberable, so we made an easy to follow list of useful commands.
 
 ## Quick links
 
@@ -63,7 +64,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 
 **STOP DRAG AND DROPPING A FILE, OR CMD/CTRL + C, CMD/CTRL + V A FILE** :-1:
 
-Copy `readme.txt` to the `documents` directory
+Copy `readme.txt` file to the `documents` directory:
 
 ```shell
 $ cp readme.txt documents/
@@ -71,12 +72,14 @@ $ cp readme.txt documents/
 
 ## duplicate a file
 
-**STOP RIGHT CLICKING AND DUPLICATE A FILE** :-1:
+**STOP RIGHT CLICKING TO DUPLICATE A FILE** :-1:
 
 ```shell
 $ cp readme.txt readme.bak.txt
 ```
+
 More advanced:
+
 ```shell
 $ cp readme{,.bak}.txt
 # Note: learn how the {} works with touch foo{1,2,3}.txt and see what happens.
@@ -84,7 +87,7 @@ $ cp readme{,.bak}.txt
 
 ## copy a directory
 
-**STOP DRAG AND DROPPING A DIRECTORY, OR CMD/CTRL + C, CMD/CTRL + V A DIRECTORY** :-1:
+**STOP DRAG AND DROPPING A DIRECTORY, COPY/PASTING A DIRECTORY** :-1:
 
 Copy `myMusic` directory to the `myMedia` directory
 
@@ -106,7 +109,7 @@ $ cp -a myMusic myMedia/
 
 ## move a file
 
-**STOP DRAG AND DROPPING A FILE, OR CMD/CTRL + X, CMD/CTRL + V A FILE** :-1:
+**STOP DRAG AND DROPPING A FILE, OR COPY/PASTING A FILE** :-1:
 
 ```shell
 $ mv readme.txt documents/
@@ -124,7 +127,7 @@ $ mv readme.txt README.md
 
 ## move a directory
 
-**STOP DRAG AND DROPPING A DIRECTORY, OR CMD/CTRL + X, CMD/CTRL + V A DIRECTORY** :-1:
+**STOP DRAG AND DROPPING A DIRECTORY, OR CUTTING/PASTING A DIRECTORY** :-1:
 
 ```shell
 $ mv myMedia myMusic/
@@ -134,7 +137,7 @@ $ mv myMedia/ myMusic/myMedia
 
 ## rename a directory
 
-**STOP RIGHT CLICKING AND RENAME A DIRECTORY** :-1:
+**STOP RIGHT CLICKING TO RENAME A DIRECTORY** :-1:
 
 ```shell
 $ mv myMedia/ myMusic/
@@ -150,7 +153,7 @@ $ rsync -a /images/ /images2/	# note: may over-write files with the same name, s
 
 ## create a new file
 
-**STOP RIGHT CLICKING AND CREATE A NEW FILE** :-1:
+**STOP RIGHT CLICKING TO CREATE A NEW FILE** :-1:
 
 ```shell
 $ touch 'new file'    # updates the file's access and modification timestamp if it already exists
@@ -160,7 +163,7 @@ $ > 'new file'        # note: erases the content if it already exists
 
 ## create a new directory
 
-**STOP RIGHT CLICKING AND CREATE A NEW DIRECTORY** :-1:
+**STOP RIGHT CLICKING TO CREATE A NEW DIRECTORY** :-1:
 
 ```shell
 $ mkdir 'untitled folder'
@@ -170,7 +173,7 @@ $ mkdir -p 'path/may/not/exist/untitled folder'
 
 ## show file/directory size
 
-**STOP RIGHT CLICKING AND SHOW FILE/directory INFO** :-1:
+**STOP RIGHT CLICKING TO SHOW FILE/DIRECTORY INFO** :-1:
 
 ```shell
 $ du -sh node_modules/
@@ -178,7 +181,7 @@ $ du -sh node_modules/
 
 ## show file/directory info
 
-**STOP RIGHT CLICKING AND SHOW FILE/DIRECTORY INFO** :-1:
+**STOP RIGHT CLICKING TO SHOW FILE/DIRECTORY INFO** :-1:
 
 ```shell
 $ stat -x readme.md   # on macOS
@@ -197,7 +200,7 @@ $ start file      # on Windows
 
 ## zip a directory
 
-**STOP RIGHT CLICKING AND COMPRESS DIRECTORY** :-1:
+**STOP RIGHT CLICKING TO COMPRESS DIRECTORY** :-1:
 
 ```shell
 $ zip -r archive_name.zip folder_to_compress
@@ -205,7 +208,7 @@ $ zip -r archive_name.zip folder_to_compress
 
 ## unzip a directory
 
-**STOP RIGHT CLICKING AND UNCOMPRESS DIRECTORY** :-1:
+**STOP RIGHT CLICKING TO UNCOMPRESS DIRECTORY** :-1:
 
 ```shell
 $ unzip archive_name.zip
@@ -223,7 +226,7 @@ $ unzip -l archive_name.zip
 
 ## remove a file
 
-**STOP RIGHT CLICKING AND DELETE A FILE PERMANENTLY** :-1:
+**STOP RIGHT CLICKING TO DELETE A FILE PERMANENTLY** :-1:
 
 ```shell
 $ rm my_useless_file
@@ -254,7 +257,7 @@ $ ls -alrth my_folder # -r: reverse output. -t: sort by time (modified). -h: out
 **STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
 
 ```shell
-$ tree                                                        # on Linux
+$ tree                                                        # on Linux and windows
 $ find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'      # on MacOS
 # Note: install homebrew (https://brew.sh) to be able to use (some) Linux utilities such as tree.
 # brew install tree
@@ -304,7 +307,7 @@ $ date -j -v+7d                                               # on MacOS
 
 ## use a calculator
 
-**STOP USING CALCULATOR WIDGET** :-1:
+**STOP USING A CALCULATOR WIDGET** :-1:
 
 ```shell
 $ bc -l
@@ -312,7 +315,7 @@ $ bc -l
 
 ## force quit a program
 
-**STOP CTRL + ALT + DELETE and choose the program to kill** :-1:
+**STOP USING <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>DELETE</kbd> AND CHOOSING THE PROGRARM TO KILL** :-1:
 
 ```shell
 $ killall -9 program_name
@@ -339,7 +342,7 @@ $ less apps/settings.py
 
 ## search for a text in a file
 
-**STOP CMD/CTRL + F IN A FILE** :-1:
+**STOP <kbd<CMD/CTRL</kbd> + <kbd>F</kbd> IN A FILE** :-1:
 
 ```shell
 $ grep -i "Query" file.txt
@@ -349,7 +352,7 @@ $ grep -i "Query" file.txt
 
 ## search in all files in current working directory, quickly (entire disk in less than 15 minutes)
 
-**STOP CMD/CTRL + F IN A DIRECTORY** :-1:
+**STOP <kbd<CMD/CTRL</kbd> + <kbd>F</kbd> IN A DIRECTORY** :-1:
 
 ```shell
 $ ripgrep -i "Query"
@@ -390,7 +393,7 @@ $ glances
 
 ## Poweroff or Reboot your computer
 
-You can poweroff or reboot your machine via the command line. This can be useful when you're patching a server that is acessed via SSH and you don't have a GUI.
+You can poweroff or reboot your machine via the command line. This can be useful when you're patching a server that is acessed via SSH and you don't have a GUI:
 
 ```shell
 # poweroff
@@ -432,4 +435,4 @@ Tab       Auto-complete files and directory names
 
 ## I can't remember these cryptic commands
 
-You can always google or `man` the commands you are not familiar with. Or, checkout [tldr](https://github.com/tldr-pages/tldr), a collection of simplified and community-driven man pages.
+You can always search online or `man` the commands you are not familiar with. Or, checkout [tldr](https://github.com/tldr-pages/tldr), a collection of simplified and community-driven man pages.
