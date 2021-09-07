@@ -9,7 +9,7 @@ It's for noobs :)
 </details>
 <br>
 
-Graphical user interfaces (GUIs) are super friendly to computer users, this is why they were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs).
+Graphical user interfaces (GUIs) are very friendly to computer users, this is why they were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs).
 
 <div align="center">
 <img alt="Xerox Star 8010 workstations" src="./Xerox_Star_8010_workstations.jpg">
@@ -348,7 +348,13 @@ $ less apps/settings.py
 $ grep -i "Query" file.txt
 ```
 
-![grep](./grep.jpg)
+| :heart:                                                                                                               | Grep                                                                     | :heart: Julia Evans @bork                                                   |
+|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| `grep` lets you search text or regex                                                                                    | `-E` Make reg**e**xes like `.+` to work, otherwise you need to use `.\+` | `-r` **R**ecursive, search all files in a directory                         |
+| `$ grep bananas foo.txt`                                                                                              | `-v` In**v**ert match, list all lines that don't fit matche              | `-o` **O**nly print the matching part of the line                           |
+| `-i` Case **i**nsensitive                                                                                             | `-f` Only show the **f**ilenames of the files matched                    | `-a` Treat bin**a**ry data like it's text instead                           |
+| `-A`, `-B`, `-C` Show **c**ontext for your search <br> `$ grep -A 3 foo` <br> will show 3 lines **a**fter your search | `-F` Don't treat the string as a regex                                   | Grep Alternatives: `ack`, `ag` and ripgrep <br> (Better for searching code) |
+
 
 ## search in all files in current working directory, quickly (entire disk in less than 15 minutes)
 
