@@ -410,7 +410,19 @@ sudo shutdown -r now
 
 ## Quick tips
 
-![CLI tips](./cli_tips.jpg)
+```sh
+$ !! # run the last command executed
+$ sudo !! # run the last command executed but as root user
+$ !<word> # run last comand but start with a specific word
+$ !<word>:p # ^ list, but don't run the last command
+$ <space> command # execute a command without saving it in history
+$ echo "ls -l" | at midnight # execute command at given time
+$ caffeinate -u -t 3600 # stop your mac from sleeping for 1 hour
+$ ls -lhS # list and sort files by size in a directory
+$ qlmanage -p <file> # QuickLook preview from command line
+$ top -o vsize # check why your mac is slowing down
+```
+by @addyosman1
 
 ## Hotkeys
 
