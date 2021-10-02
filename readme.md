@@ -199,6 +199,14 @@ $ open file       # on MacOS
 $ start file      # on Windows
 ```
 
+## open a file in any application
+
+**STOP RIGHT CLICKING AND OPEN WITH** :-1:
+
+```shell
+$ open -a appName file
+```
+
 ## zip a directory
 
 **STOP RIGHT CLICKING AND COMPRESS DIRECTORY** :-1:
