@@ -54,6 +54,10 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [check performance of your computer](#check-performance-of-your-computer)
 1. [know whether your computer is under load, and whether it's due to memory or CPU](#know-whether-your-computer-is-under-load-and-whether-its-due-to-memory-or-cpu)
 1. [poweroff or reboot your computer](#poweroff-or-reboot-your-computer)
+1. [locate USB drives](#locate-usb-drives)
+1. [unmount USB drives](#unmount-usb-drives)
+1. [format USB drives](#format-usb-drives)
+1. [check USB format](#check-usb-format)
 1. [Quick tips](#quick-tips)
 1. [Hotkeys](#hotkeys)
 1. [I can't remember these cryptic commands](#i-cant-remember-these-cryptic-commands)
@@ -405,7 +409,7 @@ sudo shutdown -r now
 $ df
 ```
 
-## Unmount USB drives
+## unmount USB drives
 
 ```shell
 $ sudo umount /dev/sdb1
