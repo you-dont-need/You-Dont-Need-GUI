@@ -53,7 +53,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [show disk size](#show-disk-size)
 1. [check performance of your computer](#check-performance-of-your-computer)
 1. [know whether your computer is under load, and whether it's due to memory or CPU](#know-whether-your-computer-is-under-load-and-whether-its-due-to-memory-or-cpu)
-1. [Poweroff or Reboot your computer](#poweroff-or-reboot-your-computer)
+1. [poweroff or reboot your computer](#poweroff-or-reboot-your-computer)
 1. [Quick tips](#quick-tips)
 1. [Hotkeys](#hotkeys)
 1. [I can't remember these cryptic commands](#i-cant-remember-these-cryptic-commands)
@@ -388,15 +388,44 @@ $ glances
 # brew install glances
 ```
 
-## Poweroff or Reboot your computer
+## poweroff or reboot your computer
 
-You can poweroff or reboot your machine via the command line. This can be useful when you're patching a server that is acessed via SSH and you don't have a GUI.
+This can be useful when you're patching a server that is acessed via SSH and you don't have a GUI.
 
 ```shell
 # poweroff
 sudo shutdown -h now
 # reboot
 sudo shutdown -r now
+```
+
+## locate USB drives
+
+```shell
+$ df
+```
+
+## Unmount USB drives
+
+```shell
+$ sudo umount /dev/sdb1
+```
+
+## format USB drives
+
+```shell
+# FAT32
+$ sudo mkfs.vfat /dev/sdb1
+# NTFS
+$ sudo mkfs.ntfs /dev/sdb1
+# exFAT
+$ sudo mkfs.exfat /dev/sdb1
+```
+
+## check USB format
+
+```shell
+sudo fsck /dev/sdb1
 ```
 
 ## Quick tips
