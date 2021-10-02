@@ -33,6 +33,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [show file/directory size](#show-filedirectory-size)
 1. [show file/directory info](#show-filedirectory-info)
 1. [open a file with the default program](#open-a-file-with-the-default-program)
+1. [open a file in any application](#open-a-file-in-any-application)
 1. [zip a directory](#zip-a-directory)
 1. [unzip a directory](#unzip-a-directory)
 1. [peek files in a zip file](#peek-files-in-a-zip-file)
