@@ -455,10 +455,11 @@ $ less apps/settings.py
 ```shell
 $ grep -i "Query" file.txt
 ```
-[Go to table of contents 🔼](#quick-links)
-
 
 ![grep](./grep.jpg)
+
+[Go to table of contents 🔼](#quick-links)
+
 
 ## search in all files in current working directory, quickly (entire disk in less than 15 minutes)
 
