@@ -39,6 +39,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [peek files in a zip file](#peek-files-in-a-zip-file)
 1. [remove a file](#remove-a-file)
 1. [remove a directory](#remove-a-directory)
+1. [remove all files of certain criteria](#remove-all-files-of-certain-criteria)
 1. [list directory contents](#list-directory-contents)
 1. [tree view a directory and its subdirectories](#tree-view-a-directory-and-its-subdirectories)
 1. [find a stale file](#find-a-stale-file)
@@ -267,7 +268,7 @@ $ lsar -l archive_name.tar.gz
 $ rm my_useless_file
 ```
 
-IMPORTANT: The rm command deletes my_useless_file permanently, which is equivalent to move my_useless_file to Recycle Bin and hit Empty Recycle Bin.
+**IMPORTANT**: The rm command deletes my_useless_file permanently, which is equivalent to move my_useless_file to Recycle Bin and hit Empty Recycle Bin.
 
 ## remove a directory
 
@@ -276,6 +277,14 @@ IMPORTANT: The rm command deletes my_useless_file permanently, which is equivale
 ```shell
 $ rm -r my_useless_folder
 ```
+
+## remove all files of certain criteria
+
+```shell
+find . -name "*.bak" -type f -delete
+```
+
+**IMPORTANT**: run `find . -name "*.bak" -type f` first to see exactly which files you will remove.
 
 ## list directory contents
 
