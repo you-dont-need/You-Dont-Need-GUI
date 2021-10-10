@@ -277,6 +277,12 @@ IMPORTANT: The rm command deletes my_useless_file permanently, which is equivale
 $ rm -r my_useless_folder
 ```
 
+## remove all files of certain criteria
+
+```shell
+find . -name "*.bak" -type f -delete
+```
+
 ## list directory contents
 
 **STOP OPENING YOUR FINDER OR FILE EXPLORER** :-1:
