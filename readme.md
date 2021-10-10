@@ -59,6 +59,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [unmount USB drives](#unmount-usb-drives)
 1. [format USB drives](#format-usb-drives)
 1. [check USB format](#check-usb-format)
+1. [run command on all files of a directory](#run-command-on-all-files-of-a-directory)
 1. [Quick tips](#quick-tips)
 1. [Hotkeys](#hotkeys)
 1. [I can't remember these cryptic commands](#i-cant-remember-these-cryptic-commands)
