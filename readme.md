@@ -268,7 +268,7 @@ $ lsar -l archive_name.tar.gz
 $ rm my_useless_file
 ```
 
-**IMPORTANT**: The rm command deletes my_useless_file permanently, which is equivalent to move my_useless_file to Recycle Bin and hit Empty Recycle Bin.
+**IMPORTANT**: The `rm` command deletes `my_useless_file` permanently, which is equivalent to move `my_useless_file` to Recycle Bin and hit Empty Recycle Bin.
 
 ## remove a directory
 
