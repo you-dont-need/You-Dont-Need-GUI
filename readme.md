@@ -441,6 +441,14 @@ $ sudo mkfs.exfat /dev/sdb1
 sudo fsck /dev/sdb1
 ```
 
+## run command on all files of a directory
+
+**STOP CLICKING THE FILES ONE BY ONE** :-1:
+
+```shell
+for FILE in *; do echo $FILE; done
+```
+
 ## Quick tips
 
 ![CLI tips](./cli_tips.jpg)
