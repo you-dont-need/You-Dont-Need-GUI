@@ -224,6 +224,18 @@ $ zip -r archive_name.zip folder_to_compress
 $ unzip archive_name.zip
 ```
 
+## decompress files of any format
+
+**STOP RIGHT CLICKING AND UNCOMPRESS DIRECTORY** :-1:
+
+```shell
+$ unar archive_name.zip
+$ unar archive_name.7z
+$ unar archive_name.rar
+$ unar archive_name.ISO
+$ unar archive_name.tar.gz
+```
+
 ## peek files in a zip file
 
 **STOP USING WinRAR** :-1:
@@ -232,6 +244,18 @@ $ unzip archive_name.zip
 $ zipinfo archive_name.zip
 # or
 $ unzip -l archive_name.zip
+```
+
+## peek files in a compress file of any format
+
+**STOP USING WinRAR** :-1:
+
+```shell
+$ lsar -l archive_name.zip
+$ lsar -l archive_name.7z
+$ lsar -l archive_name.ISO
+$ lsar -l archive_name.rar
+$ lsar -l archive_name.tar.gz
 ```
 
 ## remove a file
