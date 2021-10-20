@@ -325,7 +325,7 @@ $ rm -r my_useless_folder
 ## remove all files of certain criteria
 
 ```shell
-find . -name "*.bak" -type f -delete
+$ find . -name "*.bak" -type f -delete
 ```
 
 **IMPORTANT**: run `find . -name "*.bak" -type f` first to see exactly which files you will remove.
@@ -430,7 +430,7 @@ $ killall -9 program_name
 **STOP OPENING A BROWSER** :-1:
 
 ```shell
-curl -i umair.surge.sh
+$ curl -i umair.surge.sh
 # curl's -i (--include) option includes HTTP response headers in its output.
 ```
 [Go to table of contents 🔼](#quick-links)
@@ -518,9 +518,9 @@ This can be useful when you're patching a server that is acessed via SSH and you
 
 ```shell
 # poweroff
-sudo shutdown -h now
+$ sudo shutdown -h now
 # reboot
-sudo shutdown -r now
+$ sudo shutdown -r now
 ```
 [Go to table of contents 🔼](#quick-links)
 
@@ -557,7 +557,7 @@ $ sudo mkfs.exfat /dev/sdb1
 ## check USB format
 
 ```shell
-sudo fsck /dev/sdb1
+$ sudo fsck /dev/sdb1
 ```
 [Go to table of contents 🔼](#quick-links)
 
@@ -567,7 +567,7 @@ sudo fsck /dev/sdb1
 **STOP CLICKING THE FILES ONE BY ONE** :-1:
 
 ```shell
-for FILE in *; do echo $FILE; done
+$ for FILE in *; do echo $FILE; done
 ```
 [Go to table of contents 🔼](#quick-links)
 
