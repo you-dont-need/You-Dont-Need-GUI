@@ -53,7 +53,7 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [search in all files in current working directory, quickly (entire disk in less than 15 minutes)](#search-in-all-files-in-current-working-directory-quickly-entire-disk-in-less-than-15-minutes)
 1. [view an image](#view-an-image)
 1. [show disk size](#show-disk-size)
-1. [check performance of your computer](#check-performance-of-your-computer)
+1. [check cpu usage, processes and RAM](#check-cpu-usage-processes-and-ram)
 1. [know whether your computer is under load, and whether it's due to memory or CPU](#know-whether-your-computer-is-under-load-and-whether-its-due-to-memory-or-cpu)
 1. [poweroff or reboot your computer](#poweroff-or-reboot-your-computer)
 1. [locate USB drives](#locate-usb-drives)
@@ -61,6 +61,9 @@ As a computer expert, we want to be more efficient and do our jobs better. We kn
 1. [format USB drives](#format-usb-drives)
 1. [check USB format](#check-usb-format)
 1. [run command on all files of a directory](#run-command-on-all-files-of-a-directory)
+1. [check network connectivity to a remote address and port](#check-network-connectivity-to-a-remote-address-and-port)
+1. [check DNS config of a domain](#check-dns-config-of-a-domain)
+1. [check the ownership and registration of a domain](#check-the-ownership-and-registration-of-a-domain)
 1. [Quick tips](#quick-tips)
 1. [Hotkeys](#hotkeys)
 1. [I can't remember these cryptic commands](#i-cant-remember-these-cryptic-commands)
@@ -493,13 +496,18 @@ $ df -h
 [Go to table of contents 🔼](#quick-links)
 
 
-## check performance of your computer
+## check cpu usage, processes and RAM
 
 **STOP OPENING YOUR ACTIVITY MONITOR OR TASK MANAGER** :-1:
 
 ```shell
 $ top
 ```
+if you want some more details:
+```shell
+$ htop
+```
+
 [Go to table of contents 🔼](#quick-links)
 
 
@@ -571,6 +579,36 @@ $ for FILE in *; do echo $FILE; done
 ```
 [Go to table of contents 🔼](#quick-links)
 
+## check network connectivity to a remote address and port
+
+**STOP USING NETWORK UTILITY**
+
+```shell
+$ nc -vz www.google.com 443
+$ nc -vz 1.1.1.1 53
+```
+
+[Go to table of contents 🔼](#quick-links)
+
+## check DNS config of a domain
+
+**STOP USING NETWORK UTILITY**
+
+```shell
+$ dig www.google.com
+```
+
+[Go to table of contents 🔼](#quick-links)
+
+## check the ownership and registration of a domain
+
+**STOP USING NETWORK UTILITY AND THE WEBSITE OF DOMAIN REGISTRATION PROVIDERS**
+
+```shell
+$ whois www.google.com
+```
+
+[Go to table of contents 🔼](#quick-links)
 
 ## Quick tips
 
