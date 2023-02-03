@@ -393,7 +393,7 @@ $ cal 11 2018
 
 **STOP USING WEBAPPS TO CALCULATE FUTURE DATES** :-1:
 
-What is todays date?
+What is today's date?
 
 ```shell
 $ date +%m/%d/%Y
@@ -522,7 +522,7 @@ $ glances
 
 ## poweroff or reboot your computer
 
-This can be useful when you're patching a server that is acessed via SSH and you don't have a GUI.
+This can be useful when you're patching a server that is accessed via SSH and you don't have a GUI.
 
 ```shell
 # poweroff
