@@ -618,32 +618,31 @@ $ whois www.google.com
 
 ## Hotkeys
 
-```
-Ctrl + A  Go to the beginning of the line you are currently typing on
-Ctrl + E  Go to the end of the line you are currently typing on
-Ctrl + L  Clears the Screen, similar to the clear command
-Ctrl + U  Clears the line before the cursor position. If you are at the end of the line, clears the entire line.
-Ctrl + H  Same as backspace
-Ctrl + R  Lets you search through previously used commands
-Ctrl + C  Kill whatever you are running
-Ctrl + D  Exit the current shell
-Ctrl + Z  Puts whatever you are running into a suspended background process. fg restores it.
-Ctrl + W  Delete the word before the cursor
-Ctrl + K  Clear the line after the cursor
-Ctrl + T  Swap the last two characters before the cursor
-Ctrl + F  Move cursor forward one character
-Ctrl + B  Move cursor backward one character
-Esc + T   Swap the last two words before the cursor
-Alt + T   Same as Esc + T
-Alt + F   Move cursor forward one word on the current line
-Alt + B   Move cursor backward one word on the current line
-Esc + F   Same as Alt + F
-Esc + B   Same as Alt + B
-Alt + .   Paste the last word of the most recently command
-Tab       Auto-complete files and directory names
-```
+| Hotkey | Description |
+|----------|-------------|
+| <kbd>Ctrl</kbd>+<kbd>A</kbd> | Go to the beginning of the line you are currently typing on |
+| <kbd>Ctrl</kbd>+<kbd>E</kbd> | Go to the end of the line you are currently typing on |
+| <kbd>Ctrl</kbd>+<kbd>L</kbd> | Clears the Screen, similar to the clear command |
+| <kbd>Ctrl</kbd>+<kbd>U</kbd> | Clears the line before the cursor position. If you are at the end of the line, clears the entire line. |
+| <kbd>Ctrl</kbd>+<kbd>H</kbd> | Same as backspace |
+| <kbd>Ctrl</kbd>+<kbd>R</kbd> | Lets you search through previously used commands |
+| <kbd>Ctrl</kbd>+<kbd>C</kbd> | Kill whatever you are running |
+| <kbd>Ctrl</kbd>+<kbd>D</kbd> | Exit the current shell |
+| <kbd>Ctrl</kbd>+<kbd>Z</kbd> | Puts whatever you are running into a suspended background process. fg restores it. |
+| <kbd>Ctrl</kbd>+<kbd>W</kbd> | Delete the word before the cursor |
+| <kbd>Ctrl</kbd>+<kbd>K</kbd> | Clear the line after the cursor |
+| <kbd>Ctrl</kbd>+<kbd>T</kbd> | Swap the last two characters before the cursor |
+| <kbd>Ctrl</kbd>+<kbd>F</kbd> | Move cursor forward one character |
+| <kbd>Ctrl</kbd>+<kbd>B</kbd> | Move cursor backward one character |
+| <kbd>Esc</kbd>+<kbd>T</kbd> | Swap the last two words before the cursor |
+| <kbd>Alt</kbd>+<kbd>T</kbd> | Same as <kbd>Esc</kbd> + <kbd>T</kbd> |
+| <kbd>Alt</kbd>+<kbd>F</kbd> | Move cursor forward one word on the current line |
+| <kbd>Alt</kbd>+<kbd>B</kbd> | Move cursor backward one word on the current line |
+| <kbd>Esc</kbd>+<kbd>F</kbd> | Same as <kbd>Alt</kbd> + <kbd>F</kbd> |
+| <kbd>Esc</kbd>+<kbd>B</kbd> | Same as <kbd>Alt</kbd> + <kbd>B</kbd> |
+| <kbd>Alt</kbd>+<kbd>.</kbd> | Paste the last word of the most recently command |
+| <kbd>Tab</kbd> | Auto-complete files and directory names |
 [Go to table of contents 🔼](#quick-links)
-
 
 ## I can't remember these cryptic commands
 
